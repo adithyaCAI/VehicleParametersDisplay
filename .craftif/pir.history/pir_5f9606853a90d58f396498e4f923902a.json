@@ -1,0 +1,339 @@
+{
+  "schema_version": "2.1.0",
+  "id": "pir_vehicleparametersdisplay",
+  "revision": "5f9606853a90d58f396498e4f923902a",
+  "provenance": {
+    "project_path": "C:\\Users\\Adith\\OneDrive\\Desktop\\FirmGenProjects\\vehicleparametersdisplay",
+    "chat_id": "20540c35-5780-4b43-9993-d9169d1d18e3",
+    "revision": "5f9606853a90d58f396498e4f923902a",
+    "generated_at_ms": 1793688499275,
+    "analyzer_version": "pir_maker-static-0.13.0",
+    "analyzed_files": [
+      "CMakeLists.txt",
+      "Core/Inc/main.h",
+      "Core/Inc/stm32g0xx_hal_conf.h",
+      "Core/Inc/stm32g0xx_it.h",
+      "Core/Src/main.c",
+      "Core/Src/stm32g0xx_hal_msp.c",
+      "Core/Src/stm32g0xx_it.c",
+      "Core/Src/system_stm32g0xx.c",
+      "firmware/app/app.c",
+      "firmware/app/app.h",
+      "firmware/bsp/board.c",
+      "firmware/bsp/board.h",
+      "firmware/configs/app_config.h",
+      "firmware/configs/build_config.h",
+      "firmware/configs/feature_config.h",
+      "firmware/configs/platform_config.h",
+      "firmware/osal/osal.h",
+      "firmware/utils/helpers/helpers.c",
+      "firmware/utils/helpers/helpers.h",
+      "firmware/utils/logger/logger.c",
+      "firmware/utils/logger/logger.h"
+    ],
+    "file_hashes": {
+      "Core/Src/stm32g0xx_hal_msp.c": "1b738e0ef208c226244b41d079689a80",
+      "firmware/bsp/board.c": "e630056f89563be97755fb3703f3a541",
+      "firmware/utils/helpers/helpers.c": "914568ab7415fec17e74f306cbb5ae09",
+      "Core/Inc/stm32g0xx_it.h": "d0ae7966831b904f9e657eda8cce4f84",
+      "firmware/app/app.h": "ebc6cfe87fb8e2ab299633dd7a067f3b",
+      "firmware/configs/build_config.h": "dd997e9a0a461df28c370a61963fd7e5",
+      "firmware/configs/platform_config.h": "010b01144dbd2d3fb63f3053b158ab7a",
+      "firmware/utils/logger/logger.h": "642efceba068f0cfa4a70d8ce56bbd82",
+      "Core/Inc/stm32g0xx_hal_conf.h": "47490bc03a4d4daab7df19194c60d151",
+      "Core/Src/main.c": "02d2835488fbfe327850f52dedf5bb92",
+      "Core/Src/system_stm32g0xx.c": "0716b9e6532685c45493350ac14c841d",
+      "firmware/utils/helpers/helpers.h": "ec8b635b7e5b55f8aeb8f47c3ff34312",
+      "Core/Src/stm32g0xx_it.c": "8d0ef6f9dd4ec967fa3a9b43e3ed75e3",
+      "CMakeLists.txt": "705bfded9648e01ff16f317a2f0dabca",
+      "firmware/configs/app_config.h": "20c9133b6bbe7707b75672d912ce41fc",
+      "firmware/app/app.c": "3206f3f5a8ec12ab95c15dd2995372e1",
+      "firmware/osal/osal.h": "f2f2c13784f7a100461b180f4028062b",
+      "Core/Inc/main.h": "e1180d82a21f08fa054dc364e7439416",
+      "firmware/configs/feature_config.h": "08ef51c6dfb8aa157bd736ea8388e0ba",
+      "firmware/utils/logger/logger.c": "a0aa546944c77a82f438514b1f38d8cc",
+      "firmware/bsp/board.h": "042ee149b198869742b0a8a89f44ed6a"
+    },
+    "board_id": "NUCLEO-G070RB",
+    "target_chip": null,
+    "config_hash": null,
+    "feature_flags": "mode=hybrid;refine=true"
+  },
+  "approval": {
+    "status": "pending"
+  },
+  "nodes": [
+    {
+      "id": "boot",
+      "node_type": "system_init",
+      "label": "Boot / app_main",
+      "properties": {
+        "target": "stm32"
+      },
+      "source_refs": [
+        {
+          "file": "Core/Src/main.c",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        }
+      ],
+      "sync": {
+        "state": "synced",
+        "last_synced_revision": "5f9606853a90d58f396498e4f923902a"
+      },
+      "ownership": {
+        "primary_files": [
+          "Core/Src/main.c"
+        ]
+      },
+      "editable_fields": [],
+      "layer": "system",
+      "ai_summary": "Bootstraps firmware startup and initializes core subsystems.",
+      "confidence": 1.0,
+      "authority": "agent",
+      "semantic_tags": [],
+      "dependencies": []
+    }
+  ],
+  "edges": [],
+  "layers": {
+    "physical": [],
+    "runtime": [],
+    "network": [],
+    "system": [
+      "boot"
+    ]
+  },
+  "partitions": [],
+  "components": [],
+  "modules": [
+    {
+      "id": "Core_Inc",
+      "label": "Core/Inc",
+      "path": "Core/Inc",
+      "kind": "module",
+      "files": [
+        "Core/Inc/main.h",
+        "Core/Inc/stm32g0xx_hal_conf.h",
+        "Core/Inc/stm32g0xx_it.h"
+      ]
+    },
+    {
+      "id": "Core_Src",
+      "label": "Core/Src",
+      "path": "Core/Src",
+      "kind": "module",
+      "files": [
+        "Core/Src/main.c",
+        "Core/Src/stm32g0xx_hal_msp.c",
+        "Core/Src/stm32g0xx_it.c",
+        "Core/Src/system_stm32g0xx.c"
+      ]
+    },
+    {
+      "id": "app",
+      "label": "app",
+      "path": "app",
+      "kind": "application",
+      "files": [
+        "firmware/app/app.c",
+        "firmware/app/app.h"
+      ]
+    },
+    {
+      "id": "bsp",
+      "label": "bsp",
+      "path": "bsp",
+      "kind": "board",
+      "files": [
+        "firmware/bsp/board.c",
+        "firmware/bsp/board.h"
+      ]
+    },
+    {
+      "id": "configs",
+      "label": "configs",
+      "path": "configs",
+      "kind": "configuration",
+      "files": [
+        "firmware/configs/app_config.h",
+        "firmware/configs/build_config.h",
+        "firmware/configs/feature_config.h",
+        "firmware/configs/platform_config.h"
+      ]
+    },
+    {
+      "id": "osal",
+      "label": "osal",
+      "path": "osal",
+      "kind": "abstraction",
+      "files": [
+        "firmware/osal/osal.h"
+      ]
+    },
+    {
+      "id": "utils_helpers",
+      "label": "utils/helpers",
+      "path": "utils/helpers",
+      "kind": "utility",
+      "files": [
+        "firmware/utils/helpers/helpers.c",
+        "firmware/utils/helpers/helpers.h"
+      ]
+    },
+    {
+      "id": "utils_logger",
+      "label": "utils/logger",
+      "path": "utils/logger",
+      "kind": "utility",
+      "files": [
+        "firmware/utils/logger/logger.c",
+        "firmware/utils/logger/logger.h"
+      ]
+    }
+  ],
+  "module_deps": [
+    {
+      "from": "Core_Src",
+      "to": "Core_Inc",
+      "via": "include",
+      "file": "Core/Src/main.c",
+      "line": 21,
+      "symbol": "main.h"
+    },
+    {
+      "from": "Core_Src",
+      "to": "app",
+      "via": "include",
+      "file": "Core/Src/main.c",
+      "line": 22,
+      "symbol": "app.h"
+    },
+    {
+      "from": "app",
+      "to": "configs",
+      "via": "include",
+      "file": "firmware/app/app.c",
+      "line": 2,
+      "symbol": "app_config.h"
+    },
+    {
+      "from": "app",
+      "to": "utils_logger",
+      "via": "include",
+      "file": "firmware/app/app.c",
+      "line": 3,
+      "symbol": "logger.h"
+    },
+    {
+      "from": "bsp",
+      "to": "configs",
+      "via": "include",
+      "file": "firmware/bsp/board.h",
+      "line": 18,
+      "symbol": "app_config.h"
+    }
+  ],
+  "task_flows": [],
+  "summary": {
+    "headline": "No additional topology can be verified from the provided source snippet.",
+    "node_count": 0,
+    "edge_count": 0,
+    "warnings": []
+  },
+  "diagrams": {
+    "hld": {
+      "title": "High-Level Design",
+      "mermaid": "flowchart TD\n  subgraph Firmware[\"Firmware\"]\n    main[\"Firmware entry<br/>Core/Src/main.c\"]\n    app[\"Application startup<br/>firmware/app/app.c\"]\n  end\n  subgraph StartupLog[\"Startup logging\"]\n    logger[\"Logging macros<br/>firmware/utils/logger/logger.h\"]\n    stdout[\"Formatted output<br/>printf\"]\n  end\n  main -->|app_start| app\n  app -->|LOGI| logger\n  logger -->|printf macro| stdout",
+      "authored_by_model": true,
+      "node_notes": {
+        "logger": "The logger header defines LOGI as a printf-backed macro, so this box represents the actual logging path rather than a separate hardware peripheral. The definition is in firmware/utils/logger/logger.h.",
+        "stdout": "This is the formatted-output endpoint used by the startup log. Its evidence is the printf expansion in the LOGI macro in firmware/utils/logger/logger.h; no UART routing is evidenced.",
+        "main": "This Cube entry point calls app_start after HAL and clock setup. The call is in Core/Src/main.c; its empty infinite loop does not implement application behavior.",
+        "app": "This is the firmware application entry function and emits the startup message once. firmware/app/app.c calls LOGI with the firmware started text."
+      }
+    },
+    "lld": {
+      "title": "Low-Level Design (Firmware Workflow)",
+      "mermaid": "flowchart TD\n  entry[\"Enter firmware entry<br/>Core/Src/main.c: app_start call\"]\n  start[\"Run application startup<br/>firmware/app/app.c:7\"]\n  log[\"Request startup log<br/>firmware/app/app.c:8\"]\n  print[\"Format and emit log<br/>firmware/utils/logger/logger.h:7\"]\n  idle[\"Remain in empty main loop<br/>Core/Src/main.c: while loop\"]\n  entry -->|app_start| start\n  start -->  log\n  log -->|LOGI macro| print\n  print -->|return| idle",
+      "authored_by_model": true,
+      "node_notes": {
+        "start": "app_start is the one-shot application startup function. firmware/app/app.c:7 defines it, and it proceeds to the startup log.",
+        "idle": "After app_start returns, main remains in its empty while loop. This idle behavior is in Core/Src/main.c; it contains no periodic application task.",
+        "entry": "The entry path invokes app_start after the generated HAL and clock setup. Core/Src/main.c contains the call; the provided code gives no application task or recurring work.",
+        "print": "LOGI expands to printf, which formats and emits the message. The macro definition is in firmware/utils/logger/logger.h:7; no concrete UART destination is configured in the provided files.",
+        "log": "The function requests a startup message through LOGI using the app tag and firmware started text. This call is in firmware/app/app.c:8."
+      }
+    },
+    "sequence": {
+      "title": "Sequence Diagram",
+      "mermaid": "sequenceDiagram\n  participant Main as Core main\n  participant App as app_start\n  participant Logger as LOGI macro\n  participant Printf as printf\n  Main->>App: app_start\n  App->>Logger: LOGI(TAG, #quot;firmware started#quot;)\n  Logger->>Printf: printf formatted startup message\n  Printf-->>Logger: return\n  Logger-->>App: return\n  App-->>Main: return",
+      "participants": [
+        "Main",
+        "App",
+        "Logger",
+        "Printf"
+      ],
+      "generated_from": [
+        "Core/Src/main.c"
+      ],
+      "grounding": 0.0,
+      "authored_by_model": true
+    },
+    "model_pass_expected": true
+  },
+  "change_log": [],
+  "unresolved": [
+    {
+      "kind": "sparse_extraction",
+      "message": "GPIO pins, sensors, and RTOS tasks could not be resolved because firmware/app and firmware/platforms/stm32 implementation snippets were not provided.",
+      "file": "Core/Src/main.c"
+    }
+  ],
+  "read_only": false,
+  "graph_version": 3,
+  "generation": {
+    "mode": "hybrid_refine",
+    "model": "local_openai_proxy/gpt-6-luna",
+    "triggered_by": "mount",
+    "analyzed_at_ms": 1793688503652,
+    "input_files": [
+      "CMakeLists.txt",
+      "Core/Inc/main.h",
+      "Core/Inc/stm32g0xx_hal_conf.h",
+      "Core/Inc/stm32g0xx_it.h",
+      "Core/Src/main.c",
+      "Core/Src/stm32g0xx_hal_msp.c",
+      "Core/Src/stm32g0xx_it.c",
+      "Core/Src/system_stm32g0xx.c",
+      "firmware/app/app.c",
+      "firmware/app/app.h",
+      "firmware/bsp/board.c",
+      "firmware/bsp/board.h",
+      "firmware/configs/app_config.h",
+      "firmware/configs/build_config.h",
+      "firmware/configs/feature_config.h",
+      "firmware/configs/platform_config.h",
+      "firmware/osal/osal.h",
+      "firmware/utils/helpers/helpers.c",
+      "firmware/utils/helpers/helpers.h",
+      "firmware/utils/logger/logger.c",
+      "firmware/utils/logger/logger.h"
+    ],
+    "token_usage": {
+      "prompt_tokens": 4671,
+      "completion_tokens": 244
+    }
+  },
+  "sync_metadata": {
+    "project_file": "",
+    "content_hash": "",
+    "pending_patches": []
+  },
+  "validation_state": {
+    "valid": true,
+    "error_count": 0,
+    "warning_count": 0,
+    "validated_at_ms": 1793688503652
+  }
+}

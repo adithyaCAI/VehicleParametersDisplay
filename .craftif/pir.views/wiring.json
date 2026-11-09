@@ -1,0 +1,181 @@
+{
+  "schema_version": "3.0.0",
+  "view": "wiring",
+  "revision": "a311648d11cc9cb29a71da682005af4e",
+  "graph_version": 59,
+  "generated_at_ms": 1794200526344,
+  "graph": {
+    "schema_version": 1,
+    "id": "pir_vehicleparametersdisplay",
+    "name": "vehicleparametersdisplay topology",
+    "description": "5 nodes, 1 connection — valid",
+    "nodes": [
+      {
+        "id": "boot",
+        "node_type": "system_init",
+        "label": "Boot / app_main",
+        "description": "Bootstraps firmware startup and initializes core subsystems.",
+        "ports": [
+          {
+            "id": "boot_boot_out_0",
+            "name": "boot_out",
+            "direction": "output",
+            "datatype": "execution",
+            "required": true,
+            "multiplicity": "one"
+          }
+        ],
+        "properties": {
+          "target": "stm32"
+        },
+        "execution": {},
+        "visual": {
+          "x": 0.0,
+          "y": 1.0,
+          "layer": 0
+        }
+      },
+      {
+        "id": "gpio_output_pb4",
+        "node_type": "gpio_output",
+        "label": "PB4",
+        "description": "Drives a digital output signal.",
+        "ports": [
+          {
+            "id": "gpio_output_pb4_exec_in_0",
+            "name": "exec_in",
+            "direction": "input",
+            "datatype": "execution",
+            "required": true,
+            "multiplicity": "one"
+          },
+          {
+            "id": "gpio_output_pb4_gpio_in_1",
+            "name": "gpio_in",
+            "direction": "input",
+            "datatype": "gpio_level",
+            "required": false,
+            "multiplicity": "one"
+          }
+        ],
+        "properties": {
+          "pin": "PB4"
+        },
+        "execution": {},
+        "visual": {
+          "x": 48.0,
+          "y": 301.0,
+          "layer": 0
+        }
+      },
+      {
+        "id": "gpio_output_pa5",
+        "node_type": "gpio_output",
+        "label": "PA5",
+        "description": "Drives a digital output signal.",
+        "ports": [
+          {
+            "id": "gpio_output_pa5_exec_in_0",
+            "name": "exec_in",
+            "direction": "input",
+            "datatype": "execution",
+            "required": true,
+            "multiplicity": "one"
+          },
+          {
+            "id": "gpio_output_pa5_gpio_in_1",
+            "name": "gpio_in",
+            "direction": "input",
+            "datatype": "gpio_level",
+            "required": false,
+            "multiplicity": "one"
+          }
+        ],
+        "properties": {
+          "pin": "PA5"
+        },
+        "execution": {},
+        "visual": {
+          "x": 0.0,
+          "y": 301.0,
+          "layer": 0
+        }
+      },
+      {
+        "id": "timer_app_start",
+        "node_type": "timer",
+        "label": "Task app_start",
+        "description": "Schedules periodic callbacks for time-based workflow.",
+        "ports": [],
+        "properties": {
+          "task_name": "app_start",
+          "period_ms": 0.0
+        },
+        "execution": {
+          "period_ms": 0.0
+        },
+        "visual": {
+          "x": 96.0,
+          "y": 301.0,
+          "layer": 0
+        }
+      },
+      {
+        "id": "uart_device_usart2",
+        "node_type": "uart_device",
+        "label": "USART2",
+        "description": "Represents a UART peripheral with mapped serial pins.",
+        "ports": [
+          {
+            "id": "uart_device_usart2_exec_in_0",
+            "name": "exec_in",
+            "direction": "input",
+            "datatype": "execution",
+            "required": false,
+            "multiplicity": "one"
+          },
+          {
+            "id": "uart_device_usart2_data_in_1",
+            "name": "data_in",
+            "direction": "input",
+            "datatype": "signal",
+            "required": false,
+            "multiplicity": "one"
+          },
+          {
+            "id": "uart_device_usart2_data_out_2",
+            "name": "data_out",
+            "direction": "output",
+            "datatype": "signal",
+            "required": false,
+            "multiplicity": "one"
+          }
+        ],
+        "properties": {
+          "port": 1,
+          "baud_rate": 115200
+        },
+        "execution": {},
+        "visual": {
+          "x": 140.0,
+          "y": 0.0,
+          "layer": 1
+        }
+      }
+    ],
+    "connections": [
+      [
+        "boot_boot_out_0",
+        "uart_device_usart2_exec_in_0"
+      ]
+    ],
+    "layout": {
+      "orientation": "",
+      "node_width": 0.0,
+      "layer_gap": 0.0,
+      "node_gap": 0.0
+    }
+  },
+  "title": "Wiring Topology",
+  "authored_by_model": false
+}

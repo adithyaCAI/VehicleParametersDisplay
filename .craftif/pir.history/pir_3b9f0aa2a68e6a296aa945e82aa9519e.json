@@ -1,0 +1,482 @@
+{
+  "schema_version": "2.1.0",
+  "id": "pir_vehicleparametersdisplay",
+  "revision": "3b9f0aa2a68e6a296aa945e82aa9519e",
+  "provenance": {
+    "project_path": "C:\\Users\\Adith\\OneDrive\\Desktop\\FirmGenProjects\\vehicleparametersdisplay",
+    "chat_id": "20540c35-5780-4b43-9993-d9169d1d18e3",
+    "revision": "3b9f0aa2a68e6a296aa945e82aa9519e",
+    "generated_at_ms": 1793695994053,
+    "analyzer_version": "pir_maker-static-0.13.0",
+    "analyzed_files": [
+      "CMakeLists.txt",
+      "Core/Inc/main.h",
+      "Core/Inc/stm32g0xx_hal_conf.h",
+      "Core/Inc/stm32g0xx_it.h",
+      "Core/Src/main.c",
+      "Core/Src/stm32g0xx_hal_msp.c",
+      "Core/Src/stm32g0xx_it.c",
+      "Core/Src/system_stm32g0xx.c",
+      "firmware/app/app.c",
+      "firmware/app/app.h",
+      "firmware/bsp/board.c",
+      "firmware/bsp/board.h",
+      "firmware/configs/app_config.h",
+      "firmware/configs/build_config.h",
+      "firmware/configs/feature_config.h",
+      "firmware/configs/platform_config.h",
+      "firmware/interfaces/i2c_bus.h",
+      "firmware/interfaces/logger_platform.h",
+      "firmware/osal/osal.h",
+      "firmware/platforms/stm32/platform_i2c1.c",
+      "firmware/platforms/stm32/platform_i2c1.h",
+      "firmware/platforms/stm32/platform_logger.c",
+      "firmware/platforms/stm32/platform_uart2.c",
+      "firmware/platforms/stm32/platform_uart2.h",
+      "firmware/utils/helpers/helpers.c",
+      "firmware/utils/helpers/helpers.h",
+      "firmware/utils/logger/logger.c",
+      "firmware/utils/logger/logger.h"
+    ],
+    "file_hashes": {
+      "Core/Src/system_stm32g0xx.c": "0716b9e6532685c45493350ac14c841d",
+      "firmware/bsp/board.c": "e630056f89563be97755fb3703f3a541",
+      "firmware/configs/feature_config.h": "08ef51c6dfb8aa157bd736ea8388e0ba",
+      "firmware/osal/osal.h": "f2f2c13784f7a100461b180f4028062b",
+      "firmware/utils/helpers/helpers.h": "ec8b635b7e5b55f8aeb8f47c3ff34312",
+      "Core/Inc/stm32g0xx_hal_conf.h": "47490bc03a4d4daab7df19194c60d151",
+      "Core/Src/main.c": "02d2835488fbfe327850f52dedf5bb92",
+      "Core/Src/stm32g0xx_it.c": "8d0ef6f9dd4ec967fa3a9b43e3ed75e3",
+      "firmware/bsp/board.h": "042ee149b198869742b0a8a89f44ed6a",
+      "firmware/configs/build_config.h": "dd997e9a0a461df28c370a61963fd7e5",
+      "firmware/configs/platform_config.h": "010b01144dbd2d3fb63f3053b158ab7a",
+      "firmware/platforms/stm32/platform_i2c1.h": "6694fc5a21e475ff8ff8c58fd08145e1",
+      "firmware/interfaces/logger_platform.h": "1e662689c8bb3fa8c3ab43b1895b6f23",
+      "firmware/platforms/stm32/platform_logger.c": "04d7c769fa0876b54d1004ef8ffee850",
+      "firmware/platforms/stm32/platform_uart2.h": "d68673f339a20008986d17154c8a6f5e",
+      "firmware/platforms/stm32/platform_uart2.c": "965428c4a7be5f9ae397cd450d0a56b3",
+      "firmware/platforms/stm32/platform_i2c1.c": "d03201a4ca650070cf7117b6baae488a",
+      "firmware/utils/logger/logger.c": "683de38368a8e40684d57734d12c1f3e",
+      "firmware/configs/app_config.h": "4c68bb82167b0cbdb385cc515348c83c",
+      "firmware/app/app.c": "006d95b55e0458af8990da944fa40dc3",
+      "firmware/utils/helpers/helpers.c": "914568ab7415fec17e74f306cbb5ae09",
+      "firmware/utils/logger/logger.h": "11e0642a5ae34bfd78facb2d81dfd5f4",
+      "Core/Src/stm32g0xx_hal_msp.c": "1b738e0ef208c226244b41d079689a80",
+      "Core/Inc/main.h": "e1180d82a21f08fa054dc364e7439416",
+      "firmware/app/app.h": "ebc6cfe87fb8e2ab299633dd7a067f3b",
+      "CMakeLists.txt": "32750f18154c7494e2543ae1ef7a4358",
+      "Core/Inc/stm32g0xx_it.h": "d0ae7966831b904f9e657eda8cce4f84",
+      "firmware/interfaces/i2c_bus.h": "dcc1babffb5ba8f7c1c0c266180b8592"
+    },
+    "board_id": "NUCLEO-G070RB",
+    "target_chip": null,
+    "config_hash": null,
+    "feature_flags": "mode=hybrid;refine=true"
+  },
+  "approval": {
+    "status": "stale"
+  },
+  "nodes": [
+    {
+      "id": "boot",
+      "node_type": "system_init",
+      "label": "Boot / app_main",
+      "properties": {
+        "target": "stm32"
+      },
+      "source_refs": [
+        {
+          "file": "Core/Src/main.c",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        }
+      ],
+      "sync": {
+        "state": "synced",
+        "last_synced_revision": "3b9f0aa2a68e6a296aa945e82aa9519e"
+      },
+      "ownership": {
+        "primary_files": [
+          "Core/Src/main.c"
+        ]
+      },
+      "editable_fields": [],
+      "layer": "system",
+      "ai_summary": "Bootstraps firmware startup and initializes core subsystems.",
+      "confidence": 1.0,
+      "authority": "agent",
+      "semantic_tags": [],
+      "dependencies": []
+    },
+    {
+      "id": "uart_device_usart2",
+      "node_type": "uart_device",
+      "label": "USART2",
+      "properties": {
+        "port": 1,
+        "baud_rate": 115200
+      },
+      "source_refs": [
+        {
+          "file": "firmware/platforms/stm32/platform_uart2.c",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        }
+      ],
+      "sync": {
+        "state": "synced",
+        "last_synced_revision": "3b9f0aa2a68e6a296aa945e82aa9519e"
+      },
+      "ownership": {
+        "primary_files": [
+          "firmware/platforms/stm32/platform_uart2.c"
+        ]
+      },
+      "editable_fields": [
+        "baud_rate"
+      ],
+      "layer": "physical",
+      "ai_summary": "Represents a UART peripheral with mapped serial pins.",
+      "confidence": 1.0,
+      "authority": "agent",
+      "semantic_tags": [],
+      "dependencies": []
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_boot_uart_device_usart2_initializes",
+      "source_node_id": "boot",
+      "target_node_id": "uart_device_usart2",
+      "kind": "hardware",
+      "confidence": 1.0,
+      "source_refs": [
+        {
+          "file": "firmware/platforms/stm32/platform_uart2.c",
+          "symbol": "USART2",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        }
+      ],
+      "semantic_label": "initializes",
+      "validated": false
+    }
+  ],
+  "layers": {
+    "physical": [
+      "uart_device_usart2"
+    ],
+    "runtime": [],
+    "network": [],
+    "system": [
+      "boot"
+    ]
+  },
+  "partitions": [],
+  "components": [],
+  "modules": [
+    {
+      "id": "Core_Inc",
+      "label": "Core/Inc",
+      "path": "Core/Inc",
+      "kind": "module",
+      "files": [
+        "Core/Inc/main.h",
+        "Core/Inc/stm32g0xx_hal_conf.h",
+        "Core/Inc/stm32g0xx_it.h"
+      ]
+    },
+    {
+      "id": "Core_Src",
+      "label": "Core/Src",
+      "path": "Core/Src",
+      "kind": "module",
+      "files": [
+        "Core/Src/main.c",
+        "Core/Src/stm32g0xx_hal_msp.c",
+        "Core/Src/stm32g0xx_it.c",
+        "Core/Src/system_stm32g0xx.c"
+      ]
+    },
+    {
+      "id": "app",
+      "label": "app",
+      "path": "app",
+      "kind": "application",
+      "files": [
+        "firmware/app/app.c",
+        "firmware/app/app.h"
+      ]
+    },
+    {
+      "id": "bsp",
+      "label": "bsp",
+      "path": "bsp",
+      "kind": "board",
+      "files": [
+        "firmware/bsp/board.c",
+        "firmware/bsp/board.h"
+      ]
+    },
+    {
+      "id": "configs",
+      "label": "configs",
+      "path": "configs",
+      "kind": "configuration",
+      "files": [
+        "firmware/configs/app_config.h",
+        "firmware/configs/build_config.h",
+        "firmware/configs/feature_config.h",
+        "firmware/configs/platform_config.h"
+      ]
+    },
+    {
+      "id": "interfaces",
+      "label": "interfaces",
+      "path": "interfaces",
+      "kind": "module",
+      "files": [
+        "firmware/interfaces/i2c_bus.h",
+        "firmware/interfaces/logger_platform.h"
+      ]
+    },
+    {
+      "id": "osal",
+      "label": "osal",
+      "path": "osal",
+      "kind": "abstraction",
+      "files": [
+        "firmware/osal/osal.h"
+      ]
+    },
+    {
+      "id": "platforms_stm32",
+      "label": "platforms/stm32",
+      "path": "platforms/stm32",
+      "kind": "platform",
+      "files": [
+        "firmware/platforms/stm32/platform_i2c1.c",
+        "firmware/platforms/stm32/platform_i2c1.h",
+        "firmware/platforms/stm32/platform_logger.c",
+        "firmware/platforms/stm32/platform_uart2.c",
+        "firmware/platforms/stm32/platform_uart2.h"
+      ]
+    },
+    {
+      "id": "utils_helpers",
+      "label": "utils/helpers",
+      "path": "utils/helpers",
+      "kind": "utility",
+      "files": [
+        "firmware/utils/helpers/helpers.c",
+        "firmware/utils/helpers/helpers.h"
+      ]
+    },
+    {
+      "id": "utils_logger",
+      "label": "utils/logger",
+      "path": "utils/logger",
+      "kind": "utility",
+      "files": [
+        "firmware/utils/logger/logger.c",
+        "firmware/utils/logger/logger.h"
+      ]
+    }
+  ],
+  "module_deps": [
+    {
+      "from": "Core_Src",
+      "to": "Core_Inc",
+      "via": "include",
+      "file": "Core/Src/main.c",
+      "line": 21,
+      "symbol": "main.h"
+    },
+    {
+      "from": "Core_Src",
+      "to": "app",
+      "via": "include",
+      "file": "Core/Src/main.c",
+      "line": 22,
+      "symbol": "app.h"
+    },
+    {
+      "from": "app",
+      "to": "interfaces",
+      "via": "include",
+      "file": "firmware/app/app.c",
+      "line": 4,
+      "symbol": "i2c_bus.h"
+    },
+    {
+      "from": "app",
+      "to": "utils_logger",
+      "via": "include",
+      "file": "firmware/app/app.c",
+      "line": 5,
+      "symbol": "logger.h"
+    },
+    {
+      "from": "bsp",
+      "to": "configs",
+      "via": "include",
+      "file": "firmware/bsp/board.h",
+      "line": 18,
+      "symbol": "app_config.h"
+    },
+    {
+      "from": "platforms_stm32",
+      "to": "configs",
+      "via": "include",
+      "file": "firmware/platforms/stm32/platform_i2c1.c",
+      "line": 4,
+      "symbol": "app_config.h"
+    },
+    {
+      "from": "platforms_stm32",
+      "to": "interfaces",
+      "via": "include",
+      "file": "firmware/platforms/stm32/platform_i2c1.h",
+      "line": 5,
+      "symbol": "i2c_bus.h"
+    },
+    {
+      "from": "utils_logger",
+      "to": "interfaces",
+      "via": "include",
+      "file": "firmware/utils/logger/logger.c",
+      "line": 4,
+      "symbol": "logger_platform.h"
+    }
+  ],
+  "task_flows": [],
+  "summary": {
+    "headline": "No additional topology can be verified from the provided source snippet.",
+    "node_count": 0,
+    "edge_count": 0,
+    "warnings": []
+  },
+  "diagrams": {
+    "hld": {
+      "title": "High-Level Design",
+      "mermaid": "flowchart TD\n  subgraph StartupBus[\"Startup and I2C scan\"]\n    app[\"Application startup and scan<br/>firmware/app/app.c\"]\n    i2c_contract[\"Shared I2C bus contract<br/>firmware/interfaces/i2c_bus.h\"]\n    i2c_adapter[\"STM32 I2C1 HAL adapter<br/>firmware/platforms/stm32/platform_i2c1.c\"]\n    i2c_periph[\"I2C1 peripheral<br/>PB8 SCL, PB9 SDA\"]\n  end\n  subgraph Diagnostics[\"Diagnostic output\"]\n    logger[\"Log formatter<br/>firmware/utils/logger/logger.c\"]\n    log_bridge[\"STM32 log bridge<br/>firmware/platforms/stm32/platform_logger.c\"]\n    uart_periph[\"USART2 serial interface<br/>TX PA2, RX PA3#59; 115200 baud\"]\n    console[\"ST-LINK Virtual COM Port<br/>UART console\"]\n  end\n\n  app -->|i2c_bus_init and i2c_bus_scan| i2c_contract\n  i2c_contract -->|STM32 HAL implementation| i2c_adapter\n  i2c_adapter -->|HAL_I2C_Init and HAL_I2C_IsDeviceReady| i2c_periph\n  app -->|LOGI and LOGE| logger\n  logger -->|logger_platform_write| log_bridge\n  log_bridge -->|platform_uart2_init and platform_uart2_write| uart_periph\n  uart_periph -->|USART2 TX on PA2| console",
+      "authored_by_model": true,
+      "node_notes": {
+        "app": "The application initializes the shared I2C bus and runs a startup address scan. Its calls to i2c_bus_init and i2c_bus_scan are in firmware/app/app.c.",
+        "logger": "This portable formatter builds newline-terminated diagnostic records and forwards them to the platform logging contract. Formatting and the call to logger_platform_write are implemented in firmware/utils/logger/logger.c.",
+        "log_bridge": "This platform bridge initializes USART2 as needed and forwards log bytes to its write function. The forwarding implementation is logger_platform_write in firmware/platforms/stm32/platform_logger.c.",
+        "i2c_periph": "This is the I2C1 hardware used for the scan, configured with PB8 as SCL and PB9 as SDA. The pin configuration is established by APP_I2C1_GPIO_PORT and the SCL/SDA macros in firmware/configs/app_config.h and HAL_I2C_MspInit in firmware/platforms/stm32/platform_i2c1.c.",
+        "console": "The UART output is identified as the NUCLEO-G070RB ST-LINK Virtual COM Port in firmware/platforms/stm32/platform_uart2.c and firmware/platforms/stm32/platform_uart2.h.",
+        "i2c_contract": "This vendor-neutral contract exposes initialization and serialized bus scanning to the application. The relevant APIs are i2c_bus_init and i2c_bus_scan in firmware/interfaces/i2c_bus.h.",
+        "uart_periph": "USART2 carries the logging output at the configured 115200 baud. firmware/platforms/stm32/platform_uart2.c configures TX on PA2 and RX on PA3 and transmits with HAL_UART_Transmit.",
+        "i2c_adapter": "The STM32 adapter implements the bus contract and performs address probes through HAL_I2C_IsDeviceReady. Its initialization and scan implementations are in firmware/platforms/stm32/platform_i2c1.c."
+      }
+    },
+    "lld": {
+      "title": "Low-Level Design (Firmware Workflow)",
+      "mermaid": "flowchart TD\n  subgraph AppStartup[\"Application startup\"]\n    enter[\"Enter application startup<br/>Core/Src/main.c:92\"]\n    init[\"Initialize shared I2C bus<br/>firmware/app/app.c:40\"]\n    init_ok{\"I2C bus initialization succeeded? — firmware/app/app.c:42\"}\n    init_error[\"Log initialization error and return<br/>firmware/app/app.c:43\"]\n    ready[\"Log bus readiness and scan intent<br/>firmware/app/app.c:48\"]\n    scan[\"Scan legal 7-bit I2C addresses<br/>firmware/app/app.c:24#59; firmware/platforms/st…\"]\n    scan_ok{\"I2C scan completed successfully? — firmware/app/app.c:27\"}\n    scan_error[\"Log scan failure and return<br/>firmware/app/app.c:29\"]\n    summary[\"Log ACK and NACK totals<br/>firmware/app/app.c:33\"]\n    more_acks{\"More acknowledged addresses to report? — firmware/app/app.c:37\"}\n    ack_log[\"Log the acknowledged address<br/>firmware/app/app.c:38\"]\n  end\n\n  enter -->  init\n  init -->  init_ok\n  init_ok -->|no| init_error\n  init_ok -->|yes| ready\n  ready -->  scan\n  scan -->  scan_ok\n  scan_ok -->|no| scan_error\n  scan_ok -->|yes| summary\n  summary -->  more_acks\n  more_acks -->|yes| ack_log\n  ack_log -->  more_acks\n  more_acks -->|no| done[\"Startup scan reporting complete<br/>firmware/app/app.c:36\"]",
+      "authored_by_model": true,
+      "node_notes": {
+        "init": "The application initializes the shared bus before scanning it. This step calls i2c_bus_init from firmware/app/app.c.",
+        "scan_ok": "The application checks the scan result before reporting results. A failed scan takes the error-and-return path in firmware/app/app.c.",
+        "init_ok": "The application checks the initialization status and returns after logging an error if initialization failed. The branch is the status test in firmware/app/app.c.",
+        "scan": "The application scans the bus and gathers acknowledging addresses. firmware/app/app.c calls i2c_bus_scan, whose STM32 implementation probes addresses using HAL_I2C_IsDeviceReady in firmware/platforms/stm32/platform_i2c1.c.",
+        "ready": "On successful initialization, the application logs that I2C1 is ready on PB8/SCL and PB9/SDA. The readiness message is in firmware/app/app.c and the pin assignments are in firmware/configs/app_config.h.",
+        "enter": "Core/Src/main.c calls app_start after the HAL and clock setup. This enters the application startup path rather than treating the generated main loop as application behavior.",
+        "more_acks": "The application iterates through the returned acknowledged-address count and logs each address. The loop condition is in firmware/app/app.c.",
+        "scan_error": "This step logs the scan failure status and returns from the startup reporting function. The branch body is in firmware/app/app.c.",
+        "ack_log": "Each iteration logs one acknowledged 7-bit address through the logger. The LOGI call is in firmware/app/app.c.",
+        "init_error": "A failed bus initialization emits an error record and ends app_start. The log call and return are in firmware/app/app.c.",
+        "summary": "For a successful scan, the application logs the ACK total and the NACK probe count. The log call and count retrieval are in firmware/app/app.c."
+      }
+    },
+    "sequence": {
+      "title": "Sequence Diagram",
+      "mermaid": "sequenceDiagram\n  participant Boot as Core main\n  participant App as app_start\n  participant I2C as I2C1 bus adapter\n  participant Log as Log formatter and UART bridge\n  participant Console as ST-LINK VCP console\n\n  Boot->>App: app_start\n  App->>I2C: i2c_bus_init\n  alt I2C initialization fails\n    I2C-->>App: IO error status\n    App->>Log: LOGE initialization failure\n    Log->>Console: Transmit diagnostic on USART2 PA2\n  else I2C initialization succeeds\n    I2C-->>App: OK status\n    App->>Log: LOGI bus ready on PB8 and PB9\n    Log->>Console: Transmit readiness message on USART2 PA2\n    App->>I2C: i2c_bus_scan\n    loop Probe addresses 0x08 through 0x77\n      I2C->>I2C: HAL_I2C_IsDeviceReady\n      alt Target acknowledges\n        I2C-->>App: Record acknowledged address\n      else Target does not acknowledge\n        I2C-->>App: Increment NACK probe count\n      end\n    end\n    alt Scan fails\n      I2C-->>App: Scan error status\n      App->>Log: LOGE scan failure\n      Log->>Console: Transmit scan error on USART2 PA2\n    else Scan succeeds\n      I2C-->>App: ACK addresses and NACK count\n      App->>Log: LOGI scan totals\n      Log->>Console: Transmit scan totals on USART2 PA2\n      loop For each acknowledged address\n        App->>Log: LOGI acknowledged address\n        Log->>Console: Transmit address on USART2 PA2\n      end\n    end\n  end",
+      "participants": [
+        "Boot",
+        "App",
+        "I2C",
+        "Log",
+        "Console"
+      ],
+      "generated_from": [
+        "Core/Src/main.c",
+        "firmware/platforms/stm32/platform_uart2.c"
+      ],
+      "grounding": 0.2,
+      "authored_by_model": true
+    },
+    "model_pass_expected": true
+  },
+  "change_log": [],
+  "unresolved": [
+    {
+      "kind": "sparse_extraction",
+      "message": "Cannot verify GPIOs, tasks, sensors, or wiring from main.c alone; app_start() implementation and relevant app_config.h/platform sources are needed.",
+      "file": "Core/Src/main.c"
+    }
+  ],
+  "read_only": false,
+  "graph_version": 15,
+  "generation": {
+    "mode": "hybrid_refine",
+    "model": "local_openai_proxy/gpt-6-luna",
+    "triggered_by": "review_point",
+    "analyzed_at_ms": 1793695999004,
+    "input_files": [
+      "CMakeLists.txt",
+      "Core/Inc/main.h",
+      "Core/Inc/stm32g0xx_hal_conf.h",
+      "Core/Inc/stm32g0xx_it.h",
+      "Core/Src/main.c",
+      "Core/Src/stm32g0xx_hal_msp.c",
+      "Core/Src/stm32g0xx_it.c",
+      "Core/Src/system_stm32g0xx.c",
+      "firmware/app/app.c",
+      "firmware/app/app.h",
+      "firmware/bsp/board.c",
+      "firmware/bsp/board.h",
+      "firmware/configs/app_config.h",
+      "firmware/configs/build_config.h",
+      "firmware/configs/feature_config.h",
+      "firmware/configs/platform_config.h",
+      "firmware/interfaces/i2c_bus.h",
+      "firmware/interfaces/logger_platform.h",
+      "firmware/osal/osal.h",
+      "firmware/platforms/stm32/platform_i2c1.c",
+      "firmware/platforms/stm32/platform_i2c1.h",
+      "firmware/platforms/stm32/platform_logger.c",
+      "firmware/platforms/stm32/platform_uart2.c",
+      "firmware/platforms/stm32/platform_uart2.h",
+      "firmware/utils/helpers/helpers.c",
+      "firmware/utils/helpers/helpers.h",
+      "firmware/utils/logger/logger.c",
+      "firmware/utils/logger/logger.h"
+    ],
+    "token_usage": {
+      "prompt_tokens": 5465,
+      "completion_tokens": 331
+    }
+  },
+  "sync_metadata": {
+    "project_file": "",
+    "content_hash": "",
+    "pending_patches": [],
+    "last_diff": {
+      "from_revision": "f92d4d8ed020126440a0c065fbeee072",
+      "to_revision": "3b9f0aa2a68e6a296aa945e82aa9519e",
+      "nodes_added": [],
+      "nodes_removed": [],
+      "nodes_changed": [],
+      "edges_added": [],
+      "edges_removed": []
+    }
+  },
+  "validation_state": {
+    "valid": true,
+    "error_count": 0,
+    "warning_count": 0,
+    "validated_at_ms": 1793695999005
+  }
+}

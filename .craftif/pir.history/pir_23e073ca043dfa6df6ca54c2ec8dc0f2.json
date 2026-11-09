@@ -1,0 +1,1157 @@
+{
+  "schema_version": "2.1.0",
+  "id": "pir_vehicleparametersdisplay",
+  "revision": "23e073ca043dfa6df6ca54c2ec8dc0f2",
+  "provenance": {
+    "project_path": "C:\\Users\\Adith\\OneDrive\\Desktop\\FirmGenProjects\\vehicleparametersdisplay",
+    "chat_id": "c1073e05-07b9-4ec5-85ae-6afef95311ac",
+    "revision": "23e073ca043dfa6df6ca54c2ec8dc0f2",
+    "generated_at_ms": 1794033630886,
+    "analyzer_version": "pir_maker-static-0.13.0",
+    "analyzed_files": [
+      "CMakeLists.txt",
+      "Core/Inc/main.h",
+      "Core/Inc/stm32g0xx_hal_conf.h",
+      "Core/Inc/stm32g0xx_it.h",
+      "Core/Src/main.c",
+      "Core/Src/stm32g0xx_hal_msp.c",
+      "Core/Src/stm32g0xx_it.c",
+      "Core/Src/system_stm32g0xx.c",
+      "firmware/app/app.c",
+      "firmware/app/app.h",
+      "firmware/bsp/board.c",
+      "firmware/bsp/board.h",
+      "firmware/configs/app_config.h",
+      "firmware/configs/build_config.h",
+      "firmware/configs/feature_config.h",
+      "firmware/configs/platform_config.h",
+      "firmware/drivers/mpu6050/mpu6050.c",
+      "firmware/drivers/mpu6050/mpu6050.h",
+      "firmware/interfaces/climate_port.h",
+      "firmware/interfaces/i2c_bus.h",
+      "firmware/interfaces/logger_platform.h",
+      "firmware/interfaces/motion_port.h",
+      "firmware/interfaces/runtime_clock.h",
+      "firmware/modules/dht22_decoder.c",
+      "firmware/modules/dht22_decoder.h",
+      "firmware/modules/motion_processor.c",
+      "firmware/modules/motion_processor.h",
+      "firmware/osal/osal.h",
+      "firmware/platforms/stm32/platform_dht22.c",
+      "firmware/platforms/stm32/platform_dht22.h",
+      "firmware/platforms/stm32/platform_i2c1.c",
+      "firmware/platforms/stm32/platform_i2c1.h",
+      "firmware/platforms/stm32/platform_logger.c",
+      "firmware/platforms/stm32/platform_motion.c",
+      "firmware/platforms/stm32/platform_runtime_clock.c",
+      "firmware/platforms/stm32/platform_uart2.c",
+      "firmware/platforms/stm32/platform_uart2.h",
+      "firmware/services/climate_service.c",
+      "firmware/services/climate_service.h",
+      "firmware/services/motion_service.c",
+      "firmware/services/motion_service.h",
+      "firmware/utils/helpers/helpers.c",
+      "firmware/utils/helpers/helpers.h",
+      "firmware/utils/logger/logger.c",
+      "firmware/utils/logger/logger.h"
+    ],
+    "file_hashes": {
+      "firmware/platforms/stm32/platform_motion.c": "ce59137bfc14e584aad6e64085dfaec6",
+      "firmware/configs/build_config.h": "dd997e9a0a461df28c370a61963fd7e5",
+      "firmware/drivers/mpu6050/mpu6050.c": "38787d5dc19958f197e348de7ade560f",
+      "firmware/osal/osal.h": "f2f2c13784f7a100461b180f4028062b",
+      "Core/Src/stm32g0xx_it.c": "8d0ef6f9dd4ec967fa3a9b43e3ed75e3",
+      "firmware/platforms/stm32/platform_i2c1.h": "6694fc5a21e475ff8ff8c58fd08145e1",
+      "firmware/platforms/stm32/platform_logger.c": "04d7c769fa0876b54d1004ef8ffee850",
+      "firmware/drivers/mpu6050/mpu6050.h": "3ee3666ac79fdcb1696b49fcdd11b39d",
+      "firmware/platforms/stm32/platform_uart2.c": "965428c4a7be5f9ae397cd450d0a56b3",
+      "firmware/utils/helpers/helpers.c": "914568ab7415fec17e74f306cbb5ae09",
+      "Core/Src/stm32g0xx_hal_msp.c": "1b738e0ef208c226244b41d079689a80",
+      "firmware/app/app.c": "915586602650df138b73062c45e72884",
+      "firmware/modules/motion_processor.h": "0b2c584eaaf6cb2e0fce6730924c8deb",
+      "firmware/interfaces/climate_port.h": "ad508df6d545c0c9eabe1aa8f00ac0ad",
+      "firmware/modules/dht22_decoder.h": "1c4b5b8ea14b583d27dd664e2528670f",
+      "firmware/platforms/stm32/platform_dht22.h": "1fd90c02b3f0536f120c30e926bc5145",
+      "Core/Src/system_stm32g0xx.c": "0716b9e6532685c45493350ac14c841d",
+      "firmware/interfaces/logger_platform.h": "1e662689c8bb3fa8c3ab43b1895b6f23",
+      "firmware/configs/feature_config.h": "08ef51c6dfb8aa157bd736ea8388e0ba",
+      "firmware/services/climate_service.h": "6ed4509e43764bf7e26ca44a34a9a17f",
+      "firmware/services/motion_service.h": "3db8619cad567e32e869f9691f962dbc",
+      "firmware/configs/app_config.h": "451c143fd0ee5dcae00c771dfaf68462",
+      "firmware/services/climate_service.c": "a35bde08e30761185e74f344eba96dbb",
+      "firmware/services/motion_service.c": "1f557cbd20002a1c10d2f19502238f01",
+      "Core/Inc/stm32g0xx_it.h": "d0ae7966831b904f9e657eda8cce4f84",
+      "firmware/utils/logger/logger.h": "11e0642a5ae34bfd78facb2d81dfd5f4",
+      "firmware/modules/dht22_decoder.c": "1e8c0bcc3a08fca2012f6abccf1ceeb9",
+      "Core/Src/main.c": "02d2835488fbfe327850f52dedf5bb92",
+      "firmware/interfaces/i2c_bus.h": "dcc1babffb5ba8f7c1c0c266180b8592",
+      "firmware/interfaces/runtime_clock.h": "332d91b607bb267a36f39173d3bc5d12",
+      "firmware/configs/platform_config.h": "010b01144dbd2d3fb63f3053b158ab7a",
+      "firmware/interfaces/motion_port.h": "b353f225f2b19f3f8d726ab2b05189b1",
+      "firmware/modules/motion_processor.c": "c81fae1fa850aced5237c2c4117fea61",
+      "firmware/platforms/stm32/platform_i2c1.c": "9267b6312a2941a2e928438f7254da40",
+      "firmware/platforms/stm32/platform_dht22.c": "c69d3e5d75e8f3662565b26045b9be2f",
+      "firmware/platforms/stm32/platform_runtime_clock.c": "6ea5f6cdc4673545545b93e0b456e879",
+      "firmware/utils/helpers/helpers.h": "ec8b635b7e5b55f8aeb8f47c3ff34312",
+      "firmware/platforms/stm32/platform_uart2.h": "d68673f339a20008986d17154c8a6f5e",
+      "CMakeLists.txt": "c0bbf8cc93caaf1eb2d76be201dfad81",
+      "firmware/bsp/board.c": "e630056f89563be97755fb3703f3a541",
+      "firmware/bsp/board.h": "042ee149b198869742b0a8a89f44ed6a",
+      "firmware/utils/logger/logger.c": "683de38368a8e40684d57734d12c1f3e",
+      "Core/Inc/main.h": "e1180d82a21f08fa054dc364e7439416",
+      "firmware/app/app.h": "ebc6cfe87fb8e2ab299633dd7a067f3b",
+      "Core/Inc/stm32g0xx_hal_conf.h": "47490bc03a4d4daab7df19194c60d151"
+    },
+    "target_chip": null,
+    "config_hash": null,
+    "feature_flags": "mode=hybrid;refine=true"
+  },
+  "approval": {
+    "status": "stale"
+  },
+  "nodes": [
+    {
+      "id": "boot",
+      "node_type": "system_init",
+      "label": "Boot / app_main",
+      "properties": {
+        "target": "stm32"
+      },
+      "source_refs": [
+        {
+          "file": "Core/Src/main.c",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        }
+      ],
+      "sync": {
+        "state": "synced",
+        "last_synced_revision": "23e073ca043dfa6df6ca54c2ec8dc0f2"
+      },
+      "ownership": {
+        "primary_files": [
+          "Core/Src/main.c"
+        ]
+      },
+      "editable_fields": [],
+      "layer": "system",
+      "ai_summary": "Bootstraps firmware startup and initializes core subsystems.",
+      "confidence": 1.0,
+      "authority": "agent",
+      "semantic_tags": [],
+      "dependencies": []
+    },
+    {
+      "id": "gpio_output_pb4",
+      "node_type": "gpio_output",
+      "label": "PB4",
+      "properties": {
+        "pin": "PB4"
+      },
+      "source_refs": [
+        {
+          "file": "firmware/platforms/stm32/platform_dht22.c",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        }
+      ],
+      "sync": {
+        "state": "synced",
+        "last_synced_revision": "23e073ca043dfa6df6ca54c2ec8dc0f2"
+      },
+      "ownership": {
+        "primary_files": [
+          "firmware/platforms/stm32/platform_dht22.c"
+        ]
+      },
+      "editable_fields": [],
+      "layer": "physical",
+      "ai_summary": "Drives a digital output signal.",
+      "confidence": 1.0,
+      "authority": "agent",
+      "semantic_tags": [],
+      "dependencies": []
+    },
+    {
+      "id": "gpio_input_pb8",
+      "node_type": "gpio_input",
+      "label": "PB8",
+      "properties": {
+        "pin": "PB8"
+      },
+      "source_refs": [
+        {
+          "file": "firmware/platforms/stm32/platform_i2c1.c",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        }
+      ],
+      "sync": {
+        "state": "synced",
+        "last_synced_revision": "23e073ca043dfa6df6ca54c2ec8dc0f2"
+      },
+      "ownership": {
+        "primary_files": [
+          "firmware/platforms/stm32/platform_i2c1.c"
+        ]
+      },
+      "editable_fields": [],
+      "layer": "physical",
+      "ai_summary": "Reads a digital input signal.",
+      "confidence": 1.0,
+      "authority": "agent",
+      "semantic_tags": [],
+      "dependencies": []
+    },
+    {
+      "id": "gpio_input_pb9",
+      "node_type": "gpio_input",
+      "label": "PB9",
+      "properties": {
+        "pin": "PB9"
+      },
+      "source_refs": [
+        {
+          "file": "firmware/platforms/stm32/platform_i2c1.c",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        }
+      ],
+      "sync": {
+        "state": "synced",
+        "last_synced_revision": "23e073ca043dfa6df6ca54c2ec8dc0f2"
+      },
+      "ownership": {
+        "primary_files": [
+          "firmware/platforms/stm32/platform_i2c1.c"
+        ]
+      },
+      "editable_fields": [],
+      "layer": "physical",
+      "ai_summary": "Reads a digital input signal.",
+      "confidence": 1.0,
+      "authority": "agent",
+      "semantic_tags": [],
+      "dependencies": []
+    },
+    {
+      "id": "timer_app_start",
+      "node_type": "timer",
+      "label": "Task app_start",
+      "properties": {
+        "task_name": "app_start",
+        "period_ms": 0.0
+      },
+      "source_refs": [
+        {
+          "file": "firmware/app/app.c",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        }
+      ],
+      "sync": {
+        "state": "synced",
+        "last_synced_revision": "23e073ca043dfa6df6ca54c2ec8dc0f2"
+      },
+      "ownership": {
+        "primary_files": [
+          "firmware/app/app.c"
+        ]
+      },
+      "editable_fields": [],
+      "layer": "runtime",
+      "ai_summary": "Schedules periodic callbacks for time-based workflow.",
+      "confidence": 1.0,
+      "authority": "agent",
+      "semantic_tags": [],
+      "dependencies": []
+    },
+    {
+      "id": "uart_device_usart2",
+      "node_type": "uart_device",
+      "label": "USART2",
+      "properties": {
+        "port": 1,
+        "baud_rate": 115200
+      },
+      "source_refs": [
+        {
+          "file": "firmware/platforms/stm32/platform_uart2.c",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        }
+      ],
+      "sync": {
+        "state": "synced",
+        "last_synced_revision": "23e073ca043dfa6df6ca54c2ec8dc0f2"
+      },
+      "ownership": {
+        "primary_files": [
+          "firmware/platforms/stm32/platform_uart2.c"
+        ]
+      },
+      "editable_fields": [
+        "baud_rate"
+      ],
+      "layer": "physical",
+      "ai_summary": "Represents a UART peripheral with mapped serial pins.",
+      "confidence": 1.0,
+      "authority": "agent",
+      "semantic_tags": [],
+      "dependencies": []
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_boot_timer_app_start_spawns",
+      "source_node_id": "boot",
+      "target_node_id": "timer_app_start",
+      "kind": "execution",
+      "confidence": 1.0,
+      "source_refs": [
+        {
+          "file": "firmware/app/app.c",
+          "symbol": "app_start",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        }
+      ],
+      "semantic_label": "spawns",
+      "validated": false
+    },
+    {
+      "id": "e_timer_app_start_gpio_input_pb8_reads",
+      "source_node_id": "timer_app_start",
+      "target_node_id": "gpio_input_pb8",
+      "kind": "execution",
+      "confidence": 1.0,
+      "source_refs": [
+        {
+          "file": "firmware/platforms/stm32/platform_i2c1.c",
+          "line": 321,
+          "symbol": "i2c_bus_scan",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        }
+      ],
+      "semantic_label": "reads",
+      "validated": false
+    },
+    {
+      "id": "e_timer_app_start_gpio_input_pb9_reads",
+      "source_node_id": "timer_app_start",
+      "target_node_id": "gpio_input_pb9",
+      "kind": "execution",
+      "confidence": 1.0,
+      "source_refs": [
+        {
+          "file": "firmware/platforms/stm32/platform_i2c1.c",
+          "line": 322,
+          "symbol": "i2c_bus_scan",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        }
+      ],
+      "semantic_label": "reads",
+      "validated": false
+    },
+    {
+      "id": "e_timer_app_start_gpio_output_pb4_drives",
+      "source_node_id": "timer_app_start",
+      "target_node_id": "gpio_output_pb4",
+      "kind": "execution",
+      "confidence": 1.0,
+      "source_refs": [
+        {
+          "file": "firmware/platforms/stm32/platform_dht22.c",
+          "line": 36,
+          "symbol": "platform_dht22_set_line_mode",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        }
+      ],
+      "semantic_label": "drives",
+      "validated": false
+    },
+    {
+      "id": "e_timer_app_start_gpio_output_pb4_reads",
+      "source_node_id": "timer_app_start",
+      "target_node_id": "gpio_output_pb4",
+      "kind": "execution",
+      "confidence": 1.0,
+      "source_refs": [
+        {
+          "file": "firmware/platforms/stm32/platform_dht22.c",
+          "line": 135,
+          "symbol": "platform_dht22_read_frame",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        }
+      ],
+      "semantic_label": "reads",
+      "validated": false
+    },
+    {
+      "id": "e_boot_uart_device_usart2_initializes",
+      "source_node_id": "boot",
+      "target_node_id": "uart_device_usart2",
+      "kind": "hardware",
+      "confidence": 1.0,
+      "source_refs": [
+        {
+          "file": "firmware/platforms/stm32/platform_uart2.c",
+          "symbol": "USART2",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        }
+      ],
+      "semantic_label": "initializes",
+      "validated": false
+    },
+    {
+      "id": "e_timer_app_start_publishes_uart_device_usart2",
+      "source_node_id": "timer_app_start",
+      "target_node_id": "uart_device_usart2",
+      "kind": "data",
+      "confidence": 0.97,
+      "source_refs": [
+        {
+          "file": "firmware/app/app.c",
+          "line": 91,
+          "symbol": "app_report_motion",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        },
+        {
+          "file": "firmware/app/app.c",
+          "line": 122,
+          "symbol": "app_report_climate",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        }
+      ],
+      "semantic_label": "publishes",
+      "validated": false
+    }
+  ],
+  "layers": {
+    "physical": [
+      "gpio_output_pb4",
+      "gpio_input_pb8",
+      "gpio_input_pb9",
+      "uart_device_usart2"
+    ],
+    "runtime": [
+      "timer_app_start"
+    ],
+    "network": [],
+    "system": [
+      "boot"
+    ]
+  },
+  "partitions": [],
+  "components": [],
+  "modules": [
+    {
+      "id": "Core_Inc",
+      "label": "Core/Inc",
+      "path": "Core/Inc",
+      "kind": "module",
+      "files": [
+        "Core/Inc/main.h",
+        "Core/Inc/stm32g0xx_hal_conf.h",
+        "Core/Inc/stm32g0xx_it.h"
+      ]
+    },
+    {
+      "id": "Core_Src",
+      "label": "Core/Src",
+      "path": "Core/Src",
+      "kind": "module",
+      "files": [
+        "Core/Src/main.c",
+        "Core/Src/stm32g0xx_hal_msp.c",
+        "Core/Src/stm32g0xx_it.c",
+        "Core/Src/system_stm32g0xx.c"
+      ]
+    },
+    {
+      "id": "app",
+      "label": "app",
+      "path": "app",
+      "kind": "application",
+      "files": [
+        "firmware/app/app.c",
+        "firmware/app/app.h"
+      ]
+    },
+    {
+      "id": "bsp",
+      "label": "bsp",
+      "path": "bsp",
+      "kind": "board",
+      "files": [
+        "firmware/bsp/board.c",
+        "firmware/bsp/board.h"
+      ]
+    },
+    {
+      "id": "configs",
+      "label": "configs",
+      "path": "configs",
+      "kind": "configuration",
+      "files": [
+        "firmware/configs/app_config.h",
+        "firmware/configs/build_config.h",
+        "firmware/configs/feature_config.h",
+        "firmware/configs/platform_config.h"
+      ]
+    },
+    {
+      "id": "drivers_mpu6050",
+      "label": "drivers/mpu6050",
+      "path": "drivers/mpu6050",
+      "kind": "driver",
+      "files": [
+        "firmware/drivers/mpu6050/mpu6050.c",
+        "firmware/drivers/mpu6050/mpu6050.h"
+      ]
+    },
+    {
+      "id": "interfaces",
+      "label": "interfaces",
+      "path": "interfaces",
+      "kind": "module",
+      "files": [
+        "firmware/interfaces/climate_port.h",
+        "firmware/interfaces/i2c_bus.h",
+        "firmware/interfaces/logger_platform.h",
+        "firmware/interfaces/motion_port.h",
+        "firmware/interfaces/runtime_clock.h"
+      ]
+    },
+    {
+      "id": "modules",
+      "label": "modules",
+      "path": "modules",
+      "kind": "module",
+      "files": [
+        "firmware/modules/dht22_decoder.c",
+        "firmware/modules/dht22_decoder.h",
+        "firmware/modules/motion_processor.c",
+        "firmware/modules/motion_processor.h"
+      ]
+    },
+    {
+      "id": "osal",
+      "label": "osal",
+      "path": "osal",
+      "kind": "abstraction",
+      "files": [
+        "firmware/osal/osal.h"
+      ]
+    },
+    {
+      "id": "platforms_stm32",
+      "label": "platforms/stm32",
+      "path": "platforms/stm32",
+      "kind": "platform",
+      "files": [
+        "firmware/platforms/stm32/platform_dht22.c",
+        "firmware/platforms/stm32/platform_dht22.h",
+        "firmware/platforms/stm32/platform_i2c1.c",
+        "firmware/platforms/stm32/platform_i2c1.h",
+        "firmware/platforms/stm32/platform_logger.c",
+        "firmware/platforms/stm32/platform_motion.c",
+        "firmware/platforms/stm32/platform_runtime_clock.c",
+        "firmware/platforms/stm32/platform_uart2.c",
+        "firmware/platforms/stm32/platform_uart2.h"
+      ]
+    },
+    {
+      "id": "services",
+      "label": "services",
+      "path": "services",
+      "kind": "module",
+      "files": [
+        "firmware/services/climate_service.c",
+        "firmware/services/climate_service.h",
+        "firmware/services/motion_service.c",
+        "firmware/services/motion_service.h"
+      ]
+    },
+    {
+      "id": "utils_helpers",
+      "label": "utils/helpers",
+      "path": "utils/helpers",
+      "kind": "utility",
+      "files": [
+        "firmware/utils/helpers/helpers.c",
+        "firmware/utils/helpers/helpers.h"
+      ]
+    },
+    {
+      "id": "utils_logger",
+      "label": "utils/logger",
+      "path": "utils/logger",
+      "kind": "utility",
+      "files": [
+        "firmware/utils/logger/logger.c",
+        "firmware/utils/logger/logger.h"
+      ]
+    }
+  ],
+  "module_deps": [
+    {
+      "from": "Core_Src",
+      "to": "Core_Inc",
+      "via": "include",
+      "file": "Core/Src/main.c",
+      "line": 21,
+      "symbol": "main.h"
+    },
+    {
+      "from": "Core_Src",
+      "to": "app",
+      "via": "include",
+      "file": "Core/Src/main.c",
+      "line": 22,
+      "symbol": "app.h"
+    },
+    {
+      "from": "app",
+      "to": "configs",
+      "via": "include",
+      "file": "firmware/app/app.c",
+      "line": 4,
+      "symbol": "app_config.h"
+    },
+    {
+      "from": "app",
+      "to": "interfaces",
+      "via": "include",
+      "file": "firmware/app/app.c",
+      "line": 6,
+      "symbol": "i2c_bus.h"
+    },
+    {
+      "from": "app",
+      "to": "modules",
+      "via": "include",
+      "file": "firmware/app/app.c",
+      "line": 8,
+      "symbol": "motion_processor.h"
+    },
+    {
+      "from": "app",
+      "to": "platforms_stm32",
+      "via": "include",
+      "file": "firmware/app/app.c",
+      "line": 10,
+      "symbol": "platform_uart2.h"
+    },
+    {
+      "from": "app",
+      "to": "services",
+      "via": "include",
+      "file": "firmware/app/app.c",
+      "line": 5,
+      "symbol": "climate_service.h"
+    },
+    {
+      "from": "app",
+      "to": "utils_logger",
+      "via": "include",
+      "file": "firmware/app/app.c",
+      "line": 7,
+      "symbol": "logger.h"
+    },
+    {
+      "from": "bsp",
+      "to": "configs",
+      "via": "include",
+      "file": "firmware/bsp/board.h",
+      "line": 18,
+      "symbol": "app_config.h"
+    },
+    {
+      "from": "drivers_mpu6050",
+      "to": "configs",
+      "via": "include",
+      "file": "firmware/drivers/mpu6050/mpu6050.c",
+      "line": 4,
+      "symbol": "app_config.h"
+    },
+    {
+      "from": "modules",
+      "to": "configs",
+      "via": "include",
+      "file": "firmware/modules/motion_processor.c",
+      "line": 4,
+      "symbol": "app_config.h"
+    },
+    {
+      "from": "modules",
+      "to": "interfaces",
+      "via": "include",
+      "file": "firmware/modules/motion_processor.c",
+      "line": 5,
+      "symbol": "runtime_clock.h"
+    },
+    {
+      "from": "platforms_stm32",
+      "to": "configs",
+      "via": "include",
+      "file": "firmware/platforms/stm32/platform_dht22.c",
+      "line": 4,
+      "symbol": "app_config.h"
+    },
+    {
+      "from": "platforms_stm32",
+      "to": "drivers_mpu6050",
+      "via": "include",
+      "file": "firmware/platforms/stm32/platform_motion.c",
+      "line": 7,
+      "symbol": "mpu6050.h"
+    },
+    {
+      "from": "platforms_stm32",
+      "to": "interfaces",
+      "via": "include",
+      "file": "firmware/platforms/stm32/platform_dht22.c",
+      "line": 7,
+      "symbol": "runtime_clock.h"
+    },
+    {
+      "from": "platforms_stm32",
+      "to": "modules",
+      "via": "include",
+      "file": "firmware/platforms/stm32/platform_dht22.c",
+      "line": 5,
+      "symbol": "dht22_decoder.h"
+    },
+    {
+      "from": "platforms_stm32",
+      "to": "utils_logger",
+      "via": "include",
+      "file": "firmware/platforms/stm32/platform_dht22.c",
+      "line": 6,
+      "symbol": "logger.h"
+    },
+    {
+      "from": "services",
+      "to": "configs",
+      "via": "include",
+      "file": "firmware/services/climate_service.c",
+      "line": 4,
+      "symbol": "app_config.h"
+    },
+    {
+      "from": "services",
+      "to": "interfaces",
+      "via": "include",
+      "file": "firmware/services/climate_service.c",
+      "line": 5,
+      "symbol": "climate_port.h"
+    },
+    {
+      "from": "services",
+      "to": "modules",
+      "via": "include",
+      "file": "firmware/services/motion_service.c",
+      "line": 6,
+      "symbol": "motion_processor.h"
+    },
+    {
+      "from": "utils_logger",
+      "to": "interfaces",
+      "via": "include",
+      "file": "firmware/utils/logger/logger.c",
+      "line": 4,
+      "symbol": "logger_platform.h"
+    }
+  ],
+  "task_flows": [
+    {
+      "task_node_id": "timer_app_start",
+      "task_label": "app_start",
+      "entry_fn": "app_start",
+      "nodes": [
+        {
+          "id": "f1",
+          "label": "Task app_start",
+          "kind": "entry",
+          "file": "firmware/app/app.c",
+          "line": 198
+        },
+        {
+          "id": "f2",
+          "label": "(i2c_bus_init() != I2C_BUS_STATUS_OK)",
+          "kind": "decision",
+          "file": "firmware/app/app.c",
+          "line": 199
+        },
+        {
+          "id": "f3",
+          "label": "LOGE(TAG)",
+          "kind": "error",
+          "file": "firmware/app/app.c",
+          "line": 201
+        },
+        {
+          "id": "f4",
+          "label": "Loop forever",
+          "kind": "step",
+          "file": "firmware/app/app.c",
+          "line": 202
+        },
+        {
+          "id": "f5",
+          "label": "app_report_i2c_scan()",
+          "kind": "step",
+          "file": "firmware/app/app.c",
+          "line": 206
+        },
+        {
+          "id": "f6",
+          "label": "climate_service_init()",
+          "kind": "step",
+          "file": "firmware/app/app.c",
+          "line": 208
+        },
+        {
+          "id": "f7",
+          "label": "(climate_status != CLIMATE_STATUS_OK)",
+          "kind": "decision",
+          "file": "firmware/app/app.c",
+          "line": 209
+        },
+        {
+          "id": "f8",
+          "label": "LOGE(TAG)",
+          "kind": "error",
+          "file": "firmware/app/app.c",
+          "line": 211
+        },
+        {
+          "id": "f9",
+          "label": "Loop forever",
+          "kind": "step",
+          "file": "firmware/app/app.c",
+          "line": 212
+        },
+        {
+          "id": "f10",
+          "label": "runtime_clock_now_ms()",
+          "kind": "step",
+          "file": "firmware/app/app.c",
+          "line": 218
+        },
+        {
+          "id": "f11",
+          "label": "app_try_initialize_motion()",
+          "kind": "step",
+          "file": "firmware/app/app.c",
+          "line": 219
+        },
+        {
+          "id": "f12",
+          "label": "runtime_clock_now_ms()",
+          "kind": "step",
+          "file": "firmware/app/app.c",
+          "line": 220
+        },
+        {
+          "id": "f13",
+          "label": "Loop forever",
+          "kind": "step",
+          "file": "firmware/app/app.c",
+          "line": 222
+        },
+        {
+          "id": "f14",
+          "label": "app_poll_services()",
+          "kind": "step",
+          "file": "firmware/app/app.c",
+          "line": 224
+        },
+        {
+          "id": "f15",
+          "label": "runtime_clock_delay_ms(APP_MOTION_IDLE_DELAY_MS)",
+          "kind": "timer",
+          "file": "firmware/app/app.c",
+          "line": 225
+        }
+      ],
+      "edges": [
+        {
+          "from": "f1",
+          "to": "f2",
+          "label": "",
+          "loop_back": false
+        },
+        {
+          "from": "f2",
+          "to": "f3",
+          "label": "yes",
+          "loop_back": false
+        },
+        {
+          "from": "f3",
+          "to": "f4",
+          "label": "",
+          "loop_back": false
+        },
+        {
+          "from": "f4",
+          "to": "f5",
+          "label": "",
+          "loop_back": false
+        },
+        {
+          "from": "f2",
+          "to": "f5",
+          "label": "",
+          "loop_back": false
+        },
+        {
+          "from": "f5",
+          "to": "f6",
+          "label": "",
+          "loop_back": false
+        },
+        {
+          "from": "f6",
+          "to": "f7",
+          "label": "",
+          "loop_back": false
+        },
+        {
+          "from": "f7",
+          "to": "f8",
+          "label": "yes",
+          "loop_back": false
+        },
+        {
+          "from": "f8",
+          "to": "f9",
+          "label": "",
+          "loop_back": false
+        },
+        {
+          "from": "f9",
+          "to": "f10",
+          "label": "",
+          "loop_back": false
+        },
+        {
+          "from": "f7",
+          "to": "f10",
+          "label": "",
+          "loop_back": false
+        },
+        {
+          "from": "f10",
+          "to": "f11",
+          "label": "",
+          "loop_back": false
+        },
+        {
+          "from": "f11",
+          "to": "f12",
+          "label": "",
+          "loop_back": false
+        },
+        {
+          "from": "f12",
+          "to": "f13",
+          "label": "",
+          "loop_back": false
+        },
+        {
+          "from": "f13",
+          "to": "f14",
+          "label": "",
+          "loop_back": false
+        },
+        {
+          "from": "f14",
+          "to": "f15",
+          "label": "",
+          "loop_back": false
+        },
+        {
+          "from": "f15",
+          "to": "f13",
+          "label": "next cycle",
+          "loop_back": true
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "headline": "6 nodes, 1 connections — valid",
+    "node_count": 6,
+    "edge_count": 1,
+    "warnings": [
+      "Unknown node type 'timer'"
+    ]
+  },
+  "diagrams": {
+    "hld": {
+      "title": "High-Level Design",
+      "mermaid": "flowchart TD\n  subgraph Sensors[\"Sensors and shared I2C\"]\n    i2c[\"Shared I2C1 bus<br/>PB8 SCL, PB9 SDA#59; platform_i2c1.c\"]\n    mpu[\"Motion sensor<br/>MPU6050 at 0x68\"]\n  end\n  subgraph Climate[\"DHT22 acquisition\"]\n    dht[\"Climate sensor<br/>DHT22 data on PB4\"]\n    tim3[\"Edge timing source<br/>TIM3 at 1 MHz\"]\n  end\n  subgraph Firmware[\"Firmware services and processing\"]\n    app[\"Application orchestration<br/>firmware/app/app.c: app_start\"]\n    motion_service[\"Motion sampling service<br/>motion_service_poll\"]\n    processor[\"Motion calibration and event policy<br/>motion_processor.c\"]\n    climate_service[\"Climate sampling service<br/>climate_service_poll\"]\n    dht_port[\"DHT22 STM32 adapter<br/>platform_dht22.c\"]\n    motion_port[\"MPU6050 STM32 adapter<br/>platform_motion.c\"]\n    mpu_driver[\"MPU6050 register driver<br/>mpu6050.c\"]\n  end\n  subgraph Output[\"UART output\"]\n    logger[\"Log formatting<br/>logger.c\"]\n    uart[\"USART2 UART device<br/>TX PA2, RX PA3#59; 115200 baud\"]\n    console[\"ST-LINK Virtual COM Port<br/>console output\"]\n  end\n\n  app -->|i2c_bus_init, i2c_bus_scan| i2c\n  app -->|motion_service_init, motion_service_poll| motion_service\n  app -->|climate_service_init, climate_service_poll| climate_service\n  motion_service -->|motion_port_init, motion_port_read_acceleration| motion_port\n  motion_service -->|motion_processor_init, motion_processor_process| processor\n  motion_port -->|i2c_bus_read_register, i2c_bus_write_register| i2c\n  motion_port -->|mpu6050_init, mpu6050_read_motion| mpu_driver\n  i2c -->|I2C1 transactions on PB8/PB9| mpu\n  climate_service -->|climate_port_init, climate_port_read| dht_port\n  dht_port -->|HAL_GPIO_ReadPin, HAL_GPIO_WritePin on PB4| dht\n  dht_port -->|HAL_TIM_Base_Start, TIM counter reads| tim3\n  app -->|LOGI, LOGW, LOGE| logger\n  app -->|platform_uart2_write| uart\n  logger -->|logger_platform_write| uart\n  uart -->|USART2 TX| console",
+      "authored_by_model": true,
+      "node_notes": {
+        "dht": "The DHT22 supplies temperature and humidity over the bidirectional PB4 data line. firmware/platforms/stm32/platform_dht22.c switches PB4 between open-drain output and input and reads its logic level with HAL_GPIO_ReadPin.",
+        "dht_port": "The STM32 adapter initiates DHT22 transactions, captures pulse timing, and decodes the resulting frame. firmware/platforms/stm32/platform_dht22.c binds this work to PB4 and TIM3.",
+        "uart": "USART2 transmits logs and application telemetry at the configured 115200 baud. firmware/platforms/stm32/platform_uart2.c binds TX to PA2 and RX to PA3 and uses HAL_UART_Transmit.",
+        "console": "This is the ST-LINK Virtual COM Port sink for USART2 output on the NUCLEO-G070RB. firmware/platforms/stm32/platform_logger.c identifies the UART adapter as the logging destination.",
+        "climate_service": "This service controls DHT22 sample cadence and stores validated temperature and humidity readings. firmware/services/climate_service.c obtains readings through climate_port_init and climate_port_read.",
+        "logger": "The logger formats tagged messages before sending them to its platform writer. firmware/utils/logger/logger.c forwards the formatted text to logger_platform_write.",
+        "motion_service": "This service schedules motion acquisition, passes raw samples to processing, and retains pending events. Its public polling and initialization operations are called by firmware/app/app.c.",
+        "motion_port": "This adapter initializes the MPU6050 driver and carries register operations over the shared I2C bus. firmware/platforms/stm32/platform_motion.c connects mpu6050 calls to i2c_bus_read_register and i2c_bus_write_register.",
+        "mpu": "The MPU6050 provides acceleration samples and register responses at the configured seven-bit address 0x68. Its transactions use the shared I2C1 bus through firmware/platforms/stm32/platform_motion.c and firmware/drivers/mpu6050/mpu6050.c.",
+        "processor": "The processor converts raw accelerometer readings to milli-g, performs calibration, and classifies motion events. These operations are implemented in firmware/modules/motion_processor.c and called by motion_service.c.",
+        "i2c": "This is the shared I2C1 bus used by the motion adapter for MPU6050 register access and by app startup for its address scan. The STM32 adapter configures SCL on PB8 and SDA on PB9 in firmware/platforms/stm32/platform_i2c1.c.",
+        "mpu_driver": "The portable driver configures MPU6050 registers and decodes burst-read acceleration values. firmware/drivers/mpu6050/mpu6050.c uses the adapter-supplied register callbacks.",
+        "app": "app_start initializes the shared bus and climate service, attempts motion initialization, and repeatedly polls both services. firmware/app/app.c also formats telemetry and invokes the UART write API.",
+        "tim3": "TIM3 supplies the microsecond-scale counter used to measure DHT22 response and data pulse widths. firmware/platforms/stm32/platform_dht22.c starts it as a free-running timer with a 1 MHz counter."
+      }
+    },
+    "lld": {
+      "title": "Low-Level Design (Firmware Workflow)",
+      "mermaid": "flowchart TD\n  subgraph AppStart[\"app_start application loop\"]\n    entry[\"Enter application<br/>Core/Src/main.c: app_start call\"]\n    initbus[\"Initialize I2C1 bus<br/>firmware/app/app.c: app_start\"]\n    scan[\"Scan I2C addresses and log responders<br/>firmware/app/app.c: app_report_i2c_sc…\"]\n    initclimate[\"Initialize DHT22 service<br/>firmware/app/app.c: app_start\"]\n    initmotion[\"Attempt MPU6050 service initialization<br/>firmware/app/app.c: app_try_initiali…\"]\n    poll[\"Poll motion and climate services<br/>firmware/app/app.c: app_poll_services\"]\n    retry{\"Motion retry interval elapsed while not ready? — firmware/app/app.c: app_poll_s…\"}\n    retryinit[\"Retry motion initialization<br/>firmware/app/app.c: app_try_initialize_motion\"]\n    ready{\"Motion service ready? — firmware/app/app.c: app_poll_services\"}\n    motionpoll[\"Acquire and process due motion sample<br/>firmware/app/app.c: motion_service_po…\"]\n    motionstatus{\"Motion poll returned OK or calibrating? — firmware/app/app.c: app_poll_services\"}\n    reportmotion[\"Report motion telemetry<br/>firmware/app/app.c: app_report_motion\"]\n    event{\"Pending motion event exists? — firmware/app/app.c: app_poll_services\"}\n    acknowledge[\"Acknowledge reported event<br/>firmware/app/app.c: motion_service_acknowledge_e…\"]\n    climatepoll[\"Poll climate service<br/>firmware/app/app.c: app_poll_services\"]\n    climatestatus{\"Climate sample succeeded? — firmware/app/app.c: app_poll_services\"}\n    reportclimate[\"Log and transmit climate reading<br/>firmware/app/app.c: app_report_climate\"]\n    climateerror[\"Mark climate reading invalid and log failure<br/>firmware/app/app.c: app_poll_s…\"]\n    delay[\"Wait before next service poll<br/>firmware/app/app.c: runtime_clock_delay_ms\"]\n  end\n\n  entry -->    initbus -->    scan -->    initclimate -->    initmotion -->    poll\n  poll -->    retry\n  retry -->|yes| retryinit\n  retry -->|no| ready\n  retryinit -->    ready\n  ready -->|yes| motionpoll\n  ready -->|no| climatepoll\n  motionpoll -->    motionstatus\n  motionstatus -->|yes| reportmotion\n  motionstatus -->|no| climatepoll\n  reportmotion -->    event\n  event -->|yes| acknowledge\n  event -->|no| climatepoll\n  acknowledge -->    climatepoll\n  climatepoll -->    climatestatus\n  climatestatus -->|yes| reportclimate\n  climatestatus -->|no, not due or unavailable| delay\n  reportclimate -->    delay\n  climateerror -->    delay\n  delay -->|1 ms| poll",
+      "authored_by_model": true,
+      "node_notes": {
+        "acknowledge": "Acknowledging clears the pending motion event after it has been logged. The application calls motion_service_acknowledge_event in firmware/app/app.c.",
+        "motionstatus": "Only successful or calibrating motion results are reported by the application. Other failure statuses follow the separate retry and error handling in firmware/app/app.c.",
+        "delay": "The application delays for APP_MOTION_IDLE_DELAY_MS before polling again. firmware/app/app.c uses runtime_clock_delay_ms, with the configured idle delay set to 1 ms.",
+        "motionpoll": "The motion service reads a due sensor sample, processes calibration and event state, and returns a status. firmware/app/app.c invokes motion_service_poll from app_poll_services.",
+        "retryinit": "A retry calls motion_service_init and updates the retry timestamp and readiness state. firmware/app/app.c keeps climate acquisition active if this initialization fails.",
+        "retry": "This condition checks whether motion initialization is overdue while motion is not ready. firmware/app/app.c uses APP_MOTION_RETRY_INTERVAL_MS to gate retries.",
+        "poll": "Each pass polls motion acquisition and climate sampling independently. firmware/app/app.c implements this work in app_poll_services.",
+        "initmotion": "The initial motion setup records readiness or schedules a later retry on failure. The policy is implemented by app_try_initialize_motion in firmware/app/app.c.",
+        "reportclimate": "A valid climate reading is logged and formatted for UART transmission. firmware/app/app.c implements this in app_report_climate.",
+        "climatestatus": "A successful sample is reported, while not-due and unavailable outcomes do not trigger a climate telemetry report. The status handling is in firmware/app/app.c.",
+        "climatepoll": "The climate service is polled on every application pass, independently of motion readiness. firmware/app/app.c calls climate_service_poll from app_poll_services.",
+        "climateerror": "For climate errors other than not-due or not-ready, the application invalidates the reading and logs the failure. This handling is in firmware/app/app.c.",
+        "initclimate": "The application initializes the climate service and stops on initialization failure. firmware/app/app.c performs this startup step before entering its polling loop.",
+        "event": "The application checks whether the motion service has a pending event after polling. firmware/app/app.c logs and acknowledges pending events.",
+        "entry": "The Cube entry point calls app_start after HAL and clock setup. Core/Src/main.c hands control to the firmware application rather than implementing its runtime loop.",
+        "reportmotion": "Motion reporting logs calibrated values and, when available, writes a telemetry line through platform_uart2_write. The reporting function is app_report_motion in firmware/app/app.c.",
+        "initbus": "app_start initializes the shared I2C bus before accessing the motion sensor. firmware/app/app.c checks the result and halts if initialization fails.",
+        "ready": "The application polls motion only after successful motion service initialization. This readiness check controls the motion path in firmware/app/app.c.",
+        "scan": "The application scans I2C addresses and logs responding devices before sensor operation. firmware/app/app.c calls i2c_bus_scan and reports the results through the logger."
+      }
+    },
+    "sequence": {
+      "title": "Sequence Diagram",
+      "mermaid": "sequenceDiagram\n  participant Boot as STM32 startup\n  participant App as app_start\n  participant I2C as I2C1 shared bus\n  participant MPU as MPU6050\n  participant Climate as climate_service and DHT22 adapter\n  participant DHT as DHT22 on PB4\n  participant Logger as logger\n  participant UART as USART2 and ST-LINK VCP\n\n  Boot->>App: Call app_start\n  App->>I2C: Initialize shared I2C1\n  App->>I2C: Scan legal device addresses\n  I2C-->>App: Return acknowledged addresses\n  App->>Climate: Initialize climate service and platform port\n  Climate-->>App: Return initialization status\n  App->>MPU: Initialize through motion service and I2C1\n  MPU-->>App: Return initialization status\n\n  loop Main service loop, 1 ms idle delay\n    App->>App: Poll motion and climate services\n    alt Motion service is ready\n      App->>MPU: Read due acceleration sample over I2C1\n      MPU-->>App: Return raw sample for calibration and event processing\n      opt Motion sample is reportable\n        App->>Logger: Log motion telemetry and event\n        Logger->>UART: Write formatted log via USART2\n        App->>UART: Write motion telemetry via platform_uart2_write\n      end\n    else Motion service is not ready\n      opt Retry interval elapsed\n        App->>MPU: Retry motion service initialization over I2C1\n        MPU-->>App: Return initialization status\n      end\n    end\n    App->>Climate: Poll for a due climate sample\n    opt Climate sample succeeds\n      Climate->>DHT: Drive and read PB4 data#59; capture edges with TIM3\n      DHT-->>Climate: Return frame for validation and decoding\n      Climate-->>App: Return temperature and humidity\n      App->>Logger: Log climate reading\n      Logger->>UART: Write formatted log via USART2\n      App->>UART: Write climate telemetry via platform_uart2_write\n    end\n  end",
+      "participants": [
+        "Boot",
+        "App",
+        "I2C",
+        "MPU",
+        "Climate",
+        "DHT",
+        "Logger",
+        "UART"
+      ],
+      "generated_from": [
+        "Core/Src/main.c",
+        "firmware/platforms/stm32/platform_dht22.c",
+        "firmware/platforms/stm32/platform_i2c1.c",
+        "firmware/app/app.c",
+        "firmware/platforms/stm32/platform_uart2.c"
+      ],
+      "grounding": 0.125,
+      "authored_by_model": true
+    },
+    "model_pass_expected": false
+  },
+  "change_log": [],
+  "unresolved": [],
+  "read_only": false,
+  "graph_version": 41,
+  "generation": {
+    "mode": "static",
+    "triggered_by": "review_point",
+    "analyzed_at_ms": 1794033630886,
+    "input_files": [
+      "CMakeLists.txt",
+      "Core/Inc/main.h",
+      "Core/Inc/stm32g0xx_hal_conf.h",
+      "Core/Inc/stm32g0xx_it.h",
+      "Core/Src/main.c",
+      "Core/Src/stm32g0xx_hal_msp.c",
+      "Core/Src/stm32g0xx_it.c",
+      "Core/Src/system_stm32g0xx.c",
+      "firmware/app/app.c",
+      "firmware/app/app.h",
+      "firmware/bsp/board.c",
+      "firmware/bsp/board.h",
+      "firmware/configs/app_config.h",
+      "firmware/configs/build_config.h",
+      "firmware/configs/feature_config.h",
+      "firmware/configs/platform_config.h",
+      "firmware/drivers/mpu6050/mpu6050.c",
+      "firmware/drivers/mpu6050/mpu6050.h",
+      "firmware/interfaces/climate_port.h",
+      "firmware/interfaces/i2c_bus.h",
+      "firmware/interfaces/logger_platform.h",
+      "firmware/interfaces/motion_port.h",
+      "firmware/interfaces/runtime_clock.h",
+      "firmware/modules/dht22_decoder.c",
+      "firmware/modules/dht22_decoder.h",
+      "firmware/modules/motion_processor.c",
+      "firmware/modules/motion_processor.h",
+      "firmware/osal/osal.h",
+      "firmware/platforms/stm32/platform_dht22.c",
+      "firmware/platforms/stm32/platform_dht22.h",
+      "firmware/platforms/stm32/platform_i2c1.c",
+      "firmware/platforms/stm32/platform_i2c1.h",
+      "firmware/platforms/stm32/platform_logger.c",
+      "firmware/platforms/stm32/platform_motion.c",
+      "firmware/platforms/stm32/platform_runtime_clock.c",
+      "firmware/platforms/stm32/platform_uart2.c",
+      "firmware/platforms/stm32/platform_uart2.h",
+      "firmware/services/climate_service.c",
+      "firmware/services/climate_service.h",
+      "firmware/services/motion_service.c",
+      "firmware/services/motion_service.h",
+      "firmware/utils/helpers/helpers.c",
+      "firmware/utils/helpers/helpers.h",
+      "firmware/utils/logger/logger.c",
+      "firmware/utils/logger/logger.h"
+    ]
+  },
+  "sync_metadata": {
+    "project_file": "",
+    "content_hash": "",
+    "pending_patches": [],
+    "last_diff": {
+      "from_revision": "b587a4ab2b3c1c46e3530ca90438d5af",
+      "to_revision": "23e073ca043dfa6df6ca54c2ec8dc0f2",
+      "nodes_added": [
+        "gpio_input_pb9",
+        "gpio_input_pb8"
+      ],
+      "nodes_removed": [],
+      "nodes_changed": [],
+      "edges_added": [
+        "e_timer_app_start_gpio_input_pb8_reads",
+        "e_timer_app_start_gpio_input_pb9_reads"
+      ],
+      "edges_removed": [
+        "e_timer_app_start_publishes_uart_telemetry"
+      ]
+    }
+  },
+  "validation_state": {
+    "valid": true,
+    "error_count": 0,
+    "warning_count": 1,
+    "validated_at_ms": 1794033630886
+  }
+}

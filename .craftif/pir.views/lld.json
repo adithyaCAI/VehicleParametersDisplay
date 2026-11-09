@@ -1,0 +1,25 @@
+{
+  "schema_version": "3.0.0",
+  "view": "lld",
+  "revision": "a311648d11cc9cb29a71da682005af4e",
+  "graph_version": 59,
+  "generated_at_ms": 1794200526345,
+  "mermaid": "flowchart TD\n  subgraph app_start[\"app_start bare-metal runtime\"]\n    enter[\"Start application and bind telemetry UART<br/>firmware/app/app.c:app_start\"]\n    setupbus[\"Initialize I2C1 and scan device addresses<br/>firmware/app/app.c:app_start#59; i2c_bus…\"]\n    setupservices[\"Initialize climate and indicator services and state<br/>firmware/app/app.c:app_start\"]\n    setupmotion[\"Attempt MPU6050 initialization<br/>firmware/app/app.c:app_try_initialize_motion\"]\n    poll[\"Poll telemetry and application services<br/>firmware/app/app.c:app_start\"]\n    ready{\"MPU6050 ready? — firmware/app/app.c:app_poll_services\"}\n    motionpoll[\"Poll motion and process readings or events<br/>firmware/app/app.c:app_poll_services\"]\n    retrydue{\"Motion retry interval elapsed? — firmware/app/app.c:app_poll_services\"}\n    retry[\"Retry motion initialization<br/>firmware/app/app.c:app_try_initialize_motion\"]\n    alertstep[\"Update alert state and change LED when needed<br/>firmware/app/app.c:app_poll_servi…\"]\n    climatepoll[\"Poll climate sensor and report valid readings<br/>firmware/app/app.c:app_poll_servi…\"]\n    oledpoll[\"Build snapshot and refresh OLED<br/>firmware/app/app.c:app_poll_oled\"]\n    delay[\"Wait one idle-delay interval<br/>firmware/app/app.c:app_start#59; APP_MOTION_IDLE_DELA…\"]\n    enter --> setupbus --> setupservices --> setupmotion --> poll\n    poll --> ready\n    ready -->|yes| motionpoll --> alertstep\n    ready -->|no| retrydue\n    retrydue -->|yes| retry --> alertstep\n    retrydue -->|no| alertstep\n    alertstep --> climatepoll --> oledpoll --> delay\n    delay -->|1 ms| poll\n  end",
+  "title": "Low-Level Design (Firmware Workflow)",
+  "node_notes": {
+    "motionpoll": "When motion is ready, the app polls for a sample, reports it, and acknowledges pending events. firmware/app/app.c handles the motion service result and event acknowledgement.",
+    "delay": "The loop waits for the configured idle delay before starting another pass. firmware/configs/app_config.h sets APP_MOTION_IDLE_DELAY_MS to 1.",
+    "poll": "Each iteration polls generated telemetry and begins the application service work. firmware/app/app.c contains the bare-metal for loop and calls app_poll_services.",
+    "retry": "When retry is due, the app attempts motion initialization again. firmware/app/app.c invokes app_try_initialize_motion from app_poll_services.",
+    "enter": "This step starts the application and provides the telemetry component with the UART handle. firmware/app/app.c calls firmgen_telemetry_start from app_start.",
+    "oledpoll": "The app makes a snapshot from the latest service readings and asks the OLED service to refresh it. firmware/app/app.c implements this in app_poll_oled.",
+    "alertstep": "The app updates alert state and writes the indicator only when its logical output changes. firmware/app/app.c calls alert_indicator_update and indicator_port_set.",
+    "retrydue": "This branch checks whether the configured motion retry interval has elapsed while the service is unavailable. firmware/app/app.c compares the current time against app_last_motion_retry_ms.",
+    "setupbus": "The application initializes the shared I2C bus and scans for responding devices before continuing. firmware/app/app.c calls i2c_bus_init and i2c_bus_scan during startup.",
+    "setupservices": "This step initializes climate acquisition and the indicator, then resets alert and OLED state. firmware/app/app.c performs these setup calls in app_start.",
+    "ready": "This branch selects normal motion polling only when initialization has succeeded. firmware/app/app.c checks app_motion_ready in app_poll_services.",
+    "setupmotion": "The application attempts to configure the motion service and records whether it is ready. firmware/app/app.c implements the attempt in app_try_initialize_motion.",
+    "climatepoll": "The application polls climate acquisition and reports valid readings, or records an acquisition failure. firmware/app/app.c calls climate_service_poll and app_report_climate in app_poll_services."
+  },
+  "authored_by_model": true
+}

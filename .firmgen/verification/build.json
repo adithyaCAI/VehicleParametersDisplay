@@ -1,0 +1,18 @@
+{
+  "schema": "firmgen.build/1",
+  "source_fingerprint": "f949d9423676adad46a30bbaf7e71899469bf6750affd06680d7863a1f309941",
+  "image": "build/vehicleparametersdisplay.elf",
+  "image_sha256": "7939ec83029e9e12e2e3e06f6dd7c6ba0c31474031c4457c27484ae05a42cb75",
+  "platform": "stm32",
+  "configuration": "ARM GCC; classic",
+  "compile_database_sha256": null,
+  "metadata_hashes": {
+    "build/CMakeCache.txt": "4a7e1a07aca276a8dd86ef2fe6bbb250b9fded6c51f5a26e3910a9476109f133",
+    "build/CMakeFiles/4.3.1/CMakeCCompiler.cmake": "026c9970f3419f1ceefc8e1d1eb827aa7214704baf719c066cb558dc65636c1c"
+  },
+  "compiler_facts": [
+    "set(CMAKE_C_COMPILER \"C:/ST/STM32CubeCLT_1.22.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe\")",
+    "set(CMAKE_C_COMPILER_ID \"GNU\")",
+    "set(CMAKE_C_COMPILER_VERSION \"14.3.1\")"
+  ]
+}

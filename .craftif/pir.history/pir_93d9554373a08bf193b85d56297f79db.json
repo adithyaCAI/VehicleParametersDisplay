@@ -1,0 +1,377 @@
+{
+  "schema_version": "2.1.0",
+  "id": "pir_vehicleparametersdisplay",
+  "revision": "93d9554373a08bf193b85d56297f79db",
+  "provenance": {
+    "project_path": "C:\\Users\\Adith\\OneDrive\\Desktop\\FirmGenProjects\\vehicleparametersdisplay",
+    "chat_id": "20540c35-5780-4b43-9993-d9169d1d18e3",
+    "revision": "93d9554373a08bf193b85d56297f79db",
+    "generated_at_ms": 1793694689750,
+    "analyzer_version": "pir_maker-static-0.13.0",
+    "analyzed_files": [
+      "CMakeLists.txt",
+      "Core/Inc/main.h",
+      "Core/Inc/stm32g0xx_hal_conf.h",
+      "Core/Inc/stm32g0xx_it.h",
+      "Core/Src/main.c",
+      "Core/Src/stm32g0xx_hal_msp.c",
+      "Core/Src/stm32g0xx_it.c",
+      "Core/Src/system_stm32g0xx.c",
+      "firmware/app/app.c",
+      "firmware/app/app.h",
+      "firmware/bsp/board.c",
+      "firmware/bsp/board.h",
+      "firmware/configs/app_config.h",
+      "firmware/configs/build_config.h",
+      "firmware/configs/feature_config.h",
+      "firmware/configs/platform_config.h",
+      "firmware/osal/osal.h",
+      "firmware/platforms/stm32/platform_i2c1.c",
+      "firmware/platforms/stm32/platform_i2c1.h",
+      "firmware/utils/helpers/helpers.c",
+      "firmware/utils/helpers/helpers.h",
+      "firmware/utils/logger/logger.c",
+      "firmware/utils/logger/logger.h"
+    ],
+    "file_hashes": {
+      "firmware/platforms/stm32/platform_i2c1.c": "72c381fb1a0dbe1aca17e03f590b82ad",
+      "firmware/configs/feature_config.h": "08ef51c6dfb8aa157bd736ea8388e0ba",
+      "Core/Src/system_stm32g0xx.c": "0716b9e6532685c45493350ac14c841d",
+      "Core/Src/stm32g0xx_it.c": "8d0ef6f9dd4ec967fa3a9b43e3ed75e3",
+      "firmware/bsp/board.c": "e630056f89563be97755fb3703f3a541",
+      "firmware/configs/app_config.h": "3df093b09c0b0d7ccabd97f44401b529",
+      "firmware/osal/osal.h": "f2f2c13784f7a100461b180f4028062b",
+      "firmware/app/app.h": "ebc6cfe87fb8e2ab299633dd7a067f3b",
+      "firmware/utils/helpers/helpers.h": "ec8b635b7e5b55f8aeb8f47c3ff34312",
+      "firmware/utils/logger/logger.c": "a0aa546944c77a82f438514b1f38d8cc",
+      "Core/Src/main.c": "02d2835488fbfe327850f52dedf5bb92",
+      "firmware/bsp/board.h": "042ee149b198869742b0a8a89f44ed6a",
+      "Core/Inc/stm32g0xx_it.h": "d0ae7966831b904f9e657eda8cce4f84",
+      "Core/Src/stm32g0xx_hal_msp.c": "1b738e0ef208c226244b41d079689a80",
+      "firmware/utils/logger/logger.h": "642efceba068f0cfa4a70d8ce56bbd82",
+      "CMakeLists.txt": "32750f18154c7494e2543ae1ef7a4358",
+      "Core/Inc/main.h": "e1180d82a21f08fa054dc364e7439416",
+      "firmware/configs/build_config.h": "dd997e9a0a461df28c370a61963fd7e5",
+      "firmware/configs/platform_config.h": "010b01144dbd2d3fb63f3053b158ab7a",
+      "firmware/utils/helpers/helpers.c": "914568ab7415fec17e74f306cbb5ae09",
+      "firmware/app/app.c": "5ba5eb33e0732b6f7f0fbfb127f2d33b",
+      "firmware/platforms/stm32/platform_i2c1.h": "f770630a462687cdfa208597358c0e7a",
+      "Core/Inc/stm32g0xx_hal_conf.h": "47490bc03a4d4daab7df19194c60d151"
+    },
+    "board_id": "NUCLEO-G070RB",
+    "target_chip": null,
+    "config_hash": null,
+    "feature_flags": "mode=hybrid;refine=true"
+  },
+  "approval": {
+    "status": "stale"
+  },
+  "nodes": [
+    {
+      "id": "boot",
+      "node_type": "system_init",
+      "label": "Boot / app_main",
+      "properties": {
+        "target": "stm32"
+      },
+      "source_refs": [
+        {
+          "file": "Core/Src/main.c",
+          "confidence": 1.0,
+          "inferred_by": "static"
+        }
+      ],
+      "sync": {
+        "state": "synced",
+        "last_synced_revision": "93d9554373a08bf193b85d56297f79db"
+      },
+      "ownership": {
+        "primary_files": [
+          "Core/Src/main.c"
+        ]
+      },
+      "editable_fields": [],
+      "layer": "system",
+      "ai_summary": "Bootstraps firmware startup and initializes core subsystems.",
+      "confidence": 1.0,
+      "authority": "agent",
+      "semantic_tags": [],
+      "dependencies": []
+    }
+  ],
+  "edges": [],
+  "layers": {
+    "physical": [],
+    "runtime": [],
+    "network": [],
+    "system": [
+      "boot"
+    ]
+  },
+  "partitions": [],
+  "components": [],
+  "modules": [
+    {
+      "id": "Core_Inc",
+      "label": "Core/Inc",
+      "path": "Core/Inc",
+      "kind": "module",
+      "files": [
+        "Core/Inc/main.h",
+        "Core/Inc/stm32g0xx_hal_conf.h",
+        "Core/Inc/stm32g0xx_it.h"
+      ]
+    },
+    {
+      "id": "Core_Src",
+      "label": "Core/Src",
+      "path": "Core/Src",
+      "kind": "module",
+      "files": [
+        "Core/Src/main.c",
+        "Core/Src/stm32g0xx_hal_msp.c",
+        "Core/Src/stm32g0xx_it.c",
+        "Core/Src/system_stm32g0xx.c"
+      ]
+    },
+    {
+      "id": "app",
+      "label": "app",
+      "path": "app",
+      "kind": "application",
+      "files": [
+        "firmware/app/app.c",
+        "firmware/app/app.h"
+      ]
+    },
+    {
+      "id": "bsp",
+      "label": "bsp",
+      "path": "bsp",
+      "kind": "board",
+      "files": [
+        "firmware/bsp/board.c",
+        "firmware/bsp/board.h"
+      ]
+    },
+    {
+      "id": "configs",
+      "label": "configs",
+      "path": "configs",
+      "kind": "configuration",
+      "files": [
+        "firmware/configs/app_config.h",
+        "firmware/configs/build_config.h",
+        "firmware/configs/feature_config.h",
+        "firmware/configs/platform_config.h"
+      ]
+    },
+    {
+      "id": "osal",
+      "label": "osal",
+      "path": "osal",
+      "kind": "abstraction",
+      "files": [
+        "firmware/osal/osal.h"
+      ]
+    },
+    {
+      "id": "platforms_stm32",
+      "label": "platforms/stm32",
+      "path": "platforms/stm32",
+      "kind": "platform",
+      "files": [
+        "firmware/platforms/stm32/platform_i2c1.c",
+        "firmware/platforms/stm32/platform_i2c1.h"
+      ]
+    },
+    {
+      "id": "utils_helpers",
+      "label": "utils/helpers",
+      "path": "utils/helpers",
+      "kind": "utility",
+      "files": [
+        "firmware/utils/helpers/helpers.c",
+        "firmware/utils/helpers/helpers.h"
+      ]
+    },
+    {
+      "id": "utils_logger",
+      "label": "utils/logger",
+      "path": "utils/logger",
+      "kind": "utility",
+      "files": [
+        "firmware/utils/logger/logger.c",
+        "firmware/utils/logger/logger.h"
+      ]
+    }
+  ],
+  "module_deps": [
+    {
+      "from": "Core_Src",
+      "to": "Core_Inc",
+      "via": "include",
+      "file": "Core/Src/main.c",
+      "line": 21,
+      "symbol": "main.h"
+    },
+    {
+      "from": "Core_Src",
+      "to": "app",
+      "via": "include",
+      "file": "Core/Src/main.c",
+      "line": 22,
+      "symbol": "app.h"
+    },
+    {
+      "from": "app",
+      "to": "configs",
+      "via": "include",
+      "file": "firmware/app/app.c",
+      "line": 2,
+      "symbol": "app_config.h"
+    },
+    {
+      "from": "app",
+      "to": "platforms_stm32",
+      "via": "include",
+      "file": "firmware/app/app.c",
+      "line": 4,
+      "symbol": "platform_i2c1.h"
+    },
+    {
+      "from": "app",
+      "to": "utils_logger",
+      "via": "include",
+      "file": "firmware/app/app.c",
+      "line": 3,
+      "symbol": "logger.h"
+    },
+    {
+      "from": "bsp",
+      "to": "configs",
+      "via": "include",
+      "file": "firmware/bsp/board.h",
+      "line": 18,
+      "symbol": "app_config.h"
+    },
+    {
+      "from": "platforms_stm32",
+      "to": "configs",
+      "via": "include",
+      "file": "firmware/platforms/stm32/platform_i2c1.c",
+      "line": 4,
+      "symbol": "app_config.h"
+    }
+  ],
+  "task_flows": [],
+  "summary": {
+    "headline": "No topology gaps can be resolved from the provided snippets.",
+    "node_count": 0,
+    "edge_count": 0,
+    "warnings": []
+  },
+  "diagrams": {
+    "hld": {
+      "title": "High-Level Design",
+      "mermaid": "flowchart TD\n  subgraph Startup[\"Firmware entry\"]\n    boot[\"Firmware entry<br/>Core/Src/main.c\"]\n  end\n  subgraph Application[\"Application services\"]\n    app[\"Application startup<br/>firmware/app/app.c\"]\n    i2c_driver[\"Serialized I2C1 driver<br/>firmware/platforms/stm32/platform_i2c1.c\"]\n    logger[\"Formatted logging<br/>firmware/utils/logger/logger.h\"]\n  end\n  subgraph I2C[\"Shared I2C1 hardware\"]\n    i2c_peripheral[\"I2C master peripheral<br/>I2C1\"]\n    i2c_wires[\"Shared I2C wiring<br/>PB8 SCL / PB9 SDA\"]\n  end\n  output[\"Formatted output sink<br/>printf\"]\n  boot -->|app_start| app\n  app -->|platform_i2c1_init| i2c_driver\n  app -->|LOGI / LOGE| logger\n  logger -->|printf macros| output\n  i2c_driver -->|HAL_I2C_Init / HAL_I2C_Master_Transmit / HAL_I2C_Mem_Read| i2c_peripheral\n  i2c_peripheral -->|GPIO alternate function mapping| i2c_wires",
+      "authored_by_model": true,
+      "node_notes": {
+        "i2c_peripheral": "The driver initializes the I2C1 master and configures its filters through STM32 HAL APIs. I2C1 is selected in firmware/platforms/stm32/platform_i2c1.c.",
+        "boot": "Cube's main entry invokes app_start once before entering its otherwise empty loop. The call is evidenced in Core/Src/main.c and transfers control to firmware/app/app.c.",
+        "app": "app_start initializes the shared I2C1 platform interface and logs either its failure or readiness. Its initialization and logging calls are in firmware/app/app.c.",
+        "i2c_driver": "This STM32 implementation configures I2C1 and provides serialized transfer, register access, and scan operations. HAL_I2C_Init and the transfer APIs are implemented in firmware/platforms/stm32/platform_i2c1.c.",
+        "logger": "The application uses LOGI and LOGE to report I2C startup status. firmware/utils/logger/logger.h implements these macros using printf.",
+        "i2c_wires": "This is the configured shared I2C wiring, with PB8 as SCL and PB9 as SDA. The pin macros are in firmware/configs/app_config.h, and the driver configures them for I2C alternate-function open-drain operation.",
+        "output": "This represents the formatted output reached by the logger macros; no UART routing or UART pin binding is established by the supplied firmware. The printf backing is declared in firmware/utils/logger/logger.h."
+      }
+    },
+    "lld": {
+      "title": "Low-Level Design (Firmware Workflow)",
+      "mermaid": "flowchart TD\n  subgraph Startup[\"app_start startup routine\"]\n    begin[\"Begin application startup<br/>firmware/app/app.c:8\"]\n    init[\"Initialize shared I2C1<br/>firmware/app/app.c:10\"]\n    ready{\"I2C initialization succeeded? — firmware/app/app.c:11\"}\n    error_log[\"Log I2C initialization failure<br/>firmware/app/app.c:13\"]\n    success_log[\"Log firmware started<br/>firmware/app/app.c:17\"]\n    finish[\"Return to Cube caller<br/>firmware/app/app.c:18\"]\n    begin -->  init -->  ready\n    ready -->|No| error_log -->  finish\n    ready -->|Yes| success_log -->  finish\n  end",
+      "authored_by_model": true,
+      "node_notes": {
+        "error_log": "On initialization failure, the application emits an error containing the status and returns without reporting the bus ready. The LOGE call and return are in firmware/app/app.c.",
+        "success_log": "On successful initialization, the application logs that shared I2C1 is ready on PB8/PB9. The LOGI call is in firmware/app/app.c.",
+        "begin": "This is the entry to the one-shot application startup routine, not a periodic task. The routine is defined as app_start in firmware/app/app.c.",
+        "ready": "This branch checks whether platform_i2c1_init returned PLATFORM_I2C1_STATUS_OK. The condition is in firmware/app/app.c.",
+        "init": "The application requests platform I2C1 initialization and captures its status before deciding whether startup can proceed. The call is in firmware/app/app.c and the implementation is in firmware/platforms/stm32/platform_i2c1.c.",
+        "finish": "Both paths leave app_start after their respective log action; the Cube caller then continues into its main loop. The function ending is in firmware/app/app.c."
+      }
+    },
+    "sequence": {
+      "title": "Sequence Diagram",
+      "generated_from": [
+        "Core/Src/main.c"
+      ],
+      "generation_error": "Model diagram rejected: template string \"Initialization\" is forbidden",
+      "authored_by_model": false
+    },
+    "model_pass_expected": true
+  },
+  "change_log": [],
+  "unresolved": [
+    {
+      "kind": "sparse_extraction",
+      "message": "Inspect firmware/app/app.c and the relevant configuration/platform files to identify application tasks, peripherals, pins, and wiring; their contents were not provided.",
+      "file": "firmware/app/app.c"
+    }
+  ],
+  "read_only": false,
+  "graph_version": 9,
+  "generation": {
+    "mode": "hybrid_refine",
+    "model": "local_openai_proxy/gpt-6-luna",
+    "triggered_by": "mount",
+    "analyzed_at_ms": 1793694695300,
+    "input_files": [
+      "CMakeLists.txt",
+      "Core/Inc/main.h",
+      "Core/Inc/stm32g0xx_hal_conf.h",
+      "Core/Inc/stm32g0xx_it.h",
+      "Core/Src/main.c",
+      "Core/Src/stm32g0xx_hal_msp.c",
+      "Core/Src/stm32g0xx_it.c",
+      "Core/Src/system_stm32g0xx.c",
+      "firmware/app/app.c",
+      "firmware/app/app.h",
+      "firmware/bsp/board.c",
+      "firmware/bsp/board.h",
+      "firmware/configs/app_config.h",
+      "firmware/configs/build_config.h",
+      "firmware/configs/feature_config.h",
+      "firmware/configs/platform_config.h",
+      "firmware/osal/osal.h",
+      "firmware/platforms/stm32/platform_i2c1.c",
+      "firmware/platforms/stm32/platform_i2c1.h",
+      "firmware/utils/helpers/helpers.c",
+      "firmware/utils/helpers/helpers.h",
+      "firmware/utils/logger/logger.c",
+      "firmware/utils/logger/logger.h"
+    ],
+    "token_usage": {
+      "prompt_tokens": 4983,
+      "completion_tokens": 324
+    }
+  },
+  "sync_metadata": {
+    "project_file": "",
+    "content_hash": "",
+    "pending_patches": [],
+    "last_diff": {
+      "from_revision": "93d9554373a08bf193b85d56297f79db",
+      "to_revision": "93d9554373a08bf193b85d56297f79db",
+      "nodes_added": [],
+      "nodes_removed": [],
+      "nodes_changed": [],
+      "edges_added": [],
+      "edges_removed": []
+    }
+  },
+  "validation_state": {
+    "valid": true,
+    "error_count": 0,
+    "warning_count": 0,
+    "validated_at_ms": 1793694695301
+  }
+}
